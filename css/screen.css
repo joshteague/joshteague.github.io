@@ -72,3 +72,37 @@ body {
   font-family: "Source Sans Pro", Helvetica, Arial, Sans;
   font-size: 14px;
 }
+
+/* line 17, ../_sass/screen.scss */
+.site {
+  width: auto;
+  max-width: 960px;
+  padding: 0px 15px;
+}
+
+/* line 23, ../_sass/screen.scss */
+.header {
+  margin-top: 90px;
+}
+
+/* line 27, ../_sass/screen.scss */
+.greeting {
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  text-shadow: 0 1px 0 #fff;
+  color: #433838;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* line 37, ../_sass/screen.scss */
+.bio {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #333;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}

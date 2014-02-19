@@ -13,3 +13,33 @@ body {
   font-family: $main-font;
   font-size:14px;
 }
+
+.site {
+  width:auto;
+  max-width: 960px;
+  padding:0px 15px;
+}
+
+.header {
+  margin-top:90px;
+}
+
+.greeting {
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  text-shadow: 0 1px 0 #fff;
+  color: #433838;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.bio {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #333;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-bottom:20px;
+}
