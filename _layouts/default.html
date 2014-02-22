@@ -6,6 +6,8 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
@@ -19,29 +21,16 @@
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
-            <div class="greeting">Hi, I'm Josh.</div>
-            <div class="bio">For the past 9+ years I’ve led product teams to create breakthrough user interfaces and experiences. And after 4 years at Google, I’m now leading design at Monetology.</div>
-            <div class="bio">Have a look at my portfolio below, my resume, and get in touch.</div>
-          </div>
+      <div class="container-fluid">
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+          </div>
+      </div>
+
+          <div id="footer">
+            <div class="container">
+              <p class="text-muted">Place sticky footer content here.</p>
             </div>
           </div>
         </div>
