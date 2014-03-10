@@ -6,12 +6,14 @@
 @import "compass/reset";
 
 $background-red: red;
-$main-font: "Source Sans Pro", Helvetica, Arial, Sans;
+$main-font: 'Whitney SSm A', 'Whitney SSm B';
 $big-margin: 100px;
 
 body { 
   font-family: $main-font;
   font-size:14px;
+  text-align: left;
+  color:#fff;
 }
 
 .site {
@@ -24,30 +26,82 @@ body {
   margin-top:90px;
 }
 
-.greeting {
-  font-family: 'Merriweather', serif;
-  font-size: 28px;
+h1 {
+  font-size: 32px;
   text-shadow: 0 1px 0 #fff;
   color: #433838;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 25px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.btn {
+  border-radius:3px;
+  padding:9px 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:#4A585F;
+  font-size: 13px;
 }
 
 .bio {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 32px;
   color: #333;
-  font-weight: 100;
-  line-height: 1.5em;
+  font-weight: 300;
+  line-height: 1.45em;
   margin-bottom:20px;
+  letter-spacing:-1px;
+
+  a {
+    font-weight: inherit;
+    color:#08c;
+  }
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
+.text-muted, .desc {
+  font-size:18px;
+  font-weight: 300;
+  margin-top:35px;
+  line-height: 1.4em;
+}
+
+.desc {
+  margin-top:18px;
+}
+
+.mt {
+  margin-top:45px;
+}
+
+.fullstory {
+  background-color: #1DAFEC;
+
+  .logo {
+    background-image:url('/assets/fullstorylogo.png');
+    background-repeat: no-repeat;
+    height:51px;
+    width:158px;
+    margin-bottom:35px;
+    margin-top:140px;
+  }
+
+  a {
+    color:#fff;
+    font-weight: 600;
+    position:relative;
+    text-transform: uppercase;
+    font-size:12px;
+    padding-right: 14px;
+  }
+  a:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 0;
+    vertical-align: middle;
+    width: 6px;
+    height: 9px;
+    content: "";
+    background-image: url('/assets/chevron-x2.png');
+    background-size: 6px 9px;
+  }
 }

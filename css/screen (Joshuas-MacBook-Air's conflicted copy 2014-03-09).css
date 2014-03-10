@@ -72,22 +72,21 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
-  color: #fff;
 }
 
-/* line 19, ../_sass/screen.scss */
+/* line 18, ../_sass/screen.scss */
 .site {
   width: auto;
   max-width: 960px;
   padding: 0px 15px;
 }
 
-/* line 25, ../_sass/screen.scss */
+/* line 24, ../_sass/screen.scss */
 .header {
   margin-top: 90px;
 }
 
-/* line 29, ../_sass/screen.scss */
+/* line 28, ../_sass/screen.scss */
 h1 {
   font-size: 32px;
   text-shadow: 0 1px 0 #fff;
@@ -96,17 +95,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-/* line 37, ../_sass/screen.scss */
-.btn {
-  border-radius: 3px;
-  padding: 9px 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #4A585F;
-  font-size: 13px;
-}
-
-/* line 46, ../_sass/screen.scss */
+/* line 36, ../_sass/screen.scss */
 .bio {
   font-size: 32px;
   color: #333;
@@ -115,62 +104,41 @@ h1 {
   margin-bottom: 20px;
   letter-spacing: -1px;
 }
-/* line 54, ../_sass/screen.scss */
+/* line 44, ../_sass/screen.scss */
 .bio a {
   font-weight: inherit;
   color: #08c;
 }
-
-/* line 60, ../_sass/screen.scss */
-.text-muted, .desc {
+/* line 49, ../_sass/screen.scss */
+.bio > .text-muted {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 35px;
-  line-height: 1.4em;
+  line-height: 1.5em;
+}
+
+/* line 57, ../_sass/screen.scss */
+.img-hero {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: none;
+  max-width: none;
+  height: auto;
+  width: auto;
 }
 
 /* line 67, ../_sass/screen.scss */
-.desc {
-  margin-top: 18px;
-}
-
-/* line 71, ../_sass/screen.scss */
-.mt {
-  margin-top: 45px;
-}
-
-/* line 75, ../_sass/screen.scss */
 .fullstory {
   background-color: #1DAFEC;
+  height: 582px;
+  margin-top: 45px;
+  position: relative;
 }
-/* line 78, ../_sass/screen.scss */
+/* line 73, ../_sass/screen.scss */
 .fullstory .logo {
   background-image: url("/assets/fullstorylogo.png");
   background-repeat: no-repeat;
   height: 51px;
   width: 158px;
-  margin-bottom: 35px;
-  margin-top: 140px;
-}
-/* line 87, ../_sass/screen.scss */
-.fullstory a {
-  color: #fff;
-  font-weight: 600;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-right: 14px;
-}
-/* line 95, ../_sass/screen.scss */
-.fullstory a:after {
-  position: absolute;
-  top: 50%;
-  margin-top: -5px;
-  right: 0;
-  vertical-align: middle;
-  width: 6px;
-  height: 9px;
-  content: "";
-  background-image: url("/assets/chevron-x2.png");
-  background-size: 6px 9px;
 }
