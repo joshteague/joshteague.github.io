@@ -123,6 +123,26 @@ h1 {
 }
 
 /* line 61, ../_sass/screen.scss */
+.g {
+  color: #2C75F6;
+}
+
+/* line 64, ../_sass/screen.scss */
+.o1 {
+  color: #DC4935;
+}
+
+/* line 67, ../_sass/screen.scss */
+.o2 {
+  color: #FFC708;
+}
+
+/* line 70, ../_sass/screen.scss */
+.l {
+  color: #009857;
+}
+
+/* line 74, ../_sass/screen.scss */
 .text-muted, .desc {
   font-size: 18px;
   font-weight: 300;
@@ -130,21 +150,21 @@ h1 {
   line-height: 1.4em;
 }
 
-/* line 68, ../_sass/screen.scss */
+/* line 81, ../_sass/screen.scss */
 .desc {
   margin-top: 18px;
 }
 
-/* line 72, ../_sass/screen.scss */
+/* line 85, ../_sass/screen.scss */
 .mt {
   margin-top: 95px;
 }
 
-/* line 76, ../_sass/screen.scss */
+/* line 89, ../_sass/screen.scss */
 .fullstory {
   background-color: #1DAFEC;
 }
-/* line 79, ../_sass/screen.scss */
+/* line 92, ../_sass/screen.scss */
 .fullstory .logo {
   background-image: url("/assets/fullstorylogo.png");
   background-repeat: no-repeat;
@@ -153,7 +173,7 @@ h1 {
   margin-bottom: 35px;
   margin-top: 140px;
 }
-/* line 88, ../_sass/screen.scss */
+/* line 101, ../_sass/screen.scss */
 .fullstory a {
   color: #fff;
   font-weight: 600;
@@ -162,7 +182,7 @@ h1 {
   font-size: 12px;
   padding-right: 14px;
 }
-/* line 96, ../_sass/screen.scss */
+/* line 109, ../_sass/screen.scss */
 .fullstory a:after {
   position: absolute;
   top: 50%;
