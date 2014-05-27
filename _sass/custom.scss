@@ -1,10 +1,19 @@
 $bodyBlue: #1DAFEC;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
 body {
+  line-height: 1.5;
+  background-color: #fff;
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
-  color: #fff;
+  color:#fff;
 }
 
 .site {
