@@ -1,3 +1,14 @@
+# Site settings
 name: Josh Teague
-markdown: redcarpet
-highlighter: true
+title: Josh Teague UX/UI and Product Design
+email: joshteague@gmail.com
+description: "For the past 10+ years I’ve led product teams to create breakthrough user interfaces and product experiences. After 4 years at Google, I’m now leading design at Monetology"
+baseurl: ""
+url: "http://joshteague.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: _sass
