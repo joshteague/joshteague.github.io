@@ -1,44 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
 
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/custom.css">
+  {% include head.html %}
 
-        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6126432/654804/css/fonts.css" />
-
-        <script>
-          var _fs_debug = false;
-          var _fs_host='fs-staging.appspot.com',_fs_org='josh';
-          (function(m,n,e,t,l,o,g,y){
-            g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-            o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-            g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
-            g.setSessionVars=function(v){FS('session',v)};g.setPageVars=function(v){FS('page',v)};
-          })(window,document,'FS','script','user');
-        </script>
-
-    </head>
     <body>
 
-          {{ content }}
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+
+    <!--{% include footer.html %}-->
 
     </body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1531304-1', 'joshteague.com');
-  ga('send', 'pageview');
-
-</script>
 </html>
