@@ -53,6 +53,48 @@ h1 {
 }
 
 /* line 48, ../_sass/custom.scss */
+.twtr {
+  background-image: url("/assets/twitter.png");
+  background-size: 35px 29px;
+  width: 35px;
+  height: 29px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  right: 121px;
+  top: 2px;
+  transition: background .2s ease-in-out;
+}
+/* line 60, ../_sass/custom.scss */
+.twtr:hover {
+  background-image: url("/assets/twitter-hover.png");
+  cursor: pointer;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 66, ../_sass/custom.scss */
+  .twtr .twtr {
+    background-image: url("/assets/twitter@2x.png");
+  }
+  /* line 69, ../_sass/custom.scss */
+  .twtr .twtr:hover {
+    background-image: url("/assets/twitter-hover@2x.png");
+  }
+}
+
+/* line 77, ../_sass/custom.scss */
+.btn-default {
+  border-color: #C2CDD6;
+  transition: all .2s ease-in-out;
+  border-radius: 2px;
+}
+/* line 82, ../_sass/custom.scss */
+.btn-default:hover {
+  background-color: #1DAFEC;
+  border: 1px solid #1DAFEC;
+  color: #fff;
+}
+
+/* line 89, ../_sass/custom.scss */
 .bio {
   font-size: 32px;
   color: #333;
@@ -60,74 +102,118 @@ h1 {
   line-height: 1.45em;
   margin-bottom: 20px;
   letter-spacing: -1px;
+  margin-bottom: 90px;
 }
 
-/* line 57, ../_sass/custom.scss */
+/* line 99, ../_sass/custom.scss */
 .bio a {
   font-weight: inherit;
   color: #08c;
 }
 
-/* line 62, ../_sass/custom.scss */
+/* line 104, ../_sass/custom.scss */
 .g {
   color: #2C75F6;
 }
 
-/* line 66, ../_sass/custom.scss */
+/* line 108, ../_sass/custom.scss */
 .o1 {
   color: #DC4935;
 }
 
-/* line 70, ../_sass/custom.scss */
+/* line 112, ../_sass/custom.scss */
 .o2 {
   color: #FFC708;
 }
 
-/* line 74, ../_sass/custom.scss */
+/* line 116, ../_sass/custom.scss */
 .l {
   color: #009857;
 }
 
-/* line 78, ../_sass/custom.scss */
-.text-muted, .desc {
+/* line 120, ../_sass/custom.scss */
+.text-muted {
   font-size: 18px;
   font-weight: 300;
   margin-top: 35px;
   line-height: 1.4em;
 }
 
-/* line 85, ../_sass/custom.scss */
-.desc {
-  margin-top: 18px;
+/* line 127, ../_sass/custom.scss */
+article {
+  padding: 10% 0px;
+  text-align: center;
+}
+/* line 131, ../_sass/custom.scss */
+article .desc {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px;
 }
 
-/* line 89, ../_sass/custom.scss */
-.mt {
-  margin-top: 95px;
-}
-
-/* line 93, ../_sass/custom.scss */
+/* line 137, ../_sass/custom.scss */
 .fullstory {
   background-color: #1DAFEC;
 }
 
-/* line 97, ../_sass/custom.scss */
-.fullstory .logo {
-  background-image: url("/assets/fullstorylogo.png");
-  background-size: 158px 51px;
-  width: 158px;
-  height: 51px;
+/* line 141, ../_sass/custom.scss */
+.homebase {
+  background-color: #39464D;
+}
+
+/* line 145, ../_sass/custom.scss */
+.google {
+  background-color: #fff;
+}
+
+/* line 149, ../_sass/custom.scss */
+.google .logo {
+  background-image: url("/assets/google.png");
+  background-size: 650px 226px;
+  width: 650px;
+  height: 226px;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
+  margin: 0px auto 50px auto;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 106, ../_sass/custom.scss */
-  .fullstory .logo {
-    background-image: url("/assets/fullstorylogo@2x.png");
+  /* line 158, ../_sass/custom.scss */
+  .google .logo {
+    background-image: url("/assets/google@2x.png");
   }
 }
-/* line 110, ../_sass/custom.scss */
+/* line 163, ../_sass/custom.scss */
+.homebase .logo {
+  background-image: url("/assets/hblogo.png");
+  background-size: 641px 147px;
+  width: 641px;
+  height: 147px;
+  background-repeat: no-repeat;
+  margin: 0px auto 50px auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 172, ../_sass/custom.scss */
+  .homebase .logo {
+    background-image: url("/assets/hblogo@2x.png");
+  }
+}
+/* line 177, ../_sass/custom.scss */
+.fullstory .logo {
+  background-image: url("/assets/fslogo.png");
+  background-size: 651px 210px;
+  width: 651px;
+  height: 210px;
+  background-repeat: no-repeat;
+  margin: 0px auto 50px auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 186, ../_sass/custom.scss */
+  .fullstory .logo {
+    background-image: url("/assets/fslogo@2x.png");
+  }
+}
+/* line 190, ../_sass/custom.scss */
 .fullstory a {
   color: #fff;
   font-weight: 600;
@@ -137,7 +223,7 @@ h1 {
   padding-right: 14px;
 }
 
-/* line 118, ../_sass/custom.scss */
+/* line 198, ../_sass/custom.scss */
 .fullstory a:after {
   position: absolute;
   top: 50%;
@@ -152,35 +238,35 @@ h1 {
 }
 
 @media (max-width: 979px) {
-  /* line 132, ../_sass/custom.scss */
+  /* line 212, ../_sass/custom.scss */
   .header {
     margin-top: 60px;
   }
 
-  /* line 136, ../_sass/custom.scss */
-  .mt {
-    margin-top: 50px;
+  /* line 216, ../_sass/custom.scss */
+  .bio {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 480px) {
-  /* line 141, ../_sass/custom.scss */
+  /* line 221, ../_sass/custom.scss */
   .header {
     margin-top: 20px;
   }
 
-  /* line 145, ../_sass/custom.scss */
+  /* line 225, ../_sass/custom.scss */
   h1 {
     font-size: 24px;
     margin-top: 7px;
   }
 
-  /* line 150, ../_sass/custom.scss */
+  /* line 230, ../_sass/custom.scss */
   .bio {
     font-size: 24px;
   }
 
-  /* line 154, ../_sass/custom.scss */
-  .mt {
-    margin-top: 30px;
+  /* line 234, ../_sass/custom.scss */
+  .bio {
+    margin-bottom: 30px;
   }
 }

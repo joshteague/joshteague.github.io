@@ -45,6 +45,47 @@ h1 {
   margin-top: -3px;
 }
 
+.twtr {
+  background-image: url("/assets/twitter.png");
+  background-size: 35px 29px;
+  width: 35px;
+  height: 29px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  right: 121px;
+  top: 2px;
+  transition: background .2s ease-in-out;
+
+  &:hover {
+      background-image: url("/assets/twitter-hover.png");
+      cursor: pointer;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .twtr {
+        background-image: url("/assets/twitter@2x.png");
+
+        &:hover {
+          background-image: url("/assets/twitter-hover@2x.png");
+        }
+
+    }
+  }
+}
+
+.btn-default {
+  border-color: #C2CDD6;
+  transition: all .2s ease-in-out;
+  border-radius: 2px;
+
+  &:hover {
+    background-color:#1DAFEC;
+    border:1px solid #1DAFEC;
+    color:#fff;
+  }
+}
+
 .bio {
   font-size: 32px;
   color: #333;
@@ -52,6 +93,7 @@ h1 {
   line-height: 1.45em;
   margin-bottom: 20px;
   letter-spacing: -1px;
+  margin-bottom: 90px;
 }
 
 .bio a {
@@ -75,36 +117,74 @@ h1 {
   color: #009857;
 }
 
-.text-muted, .desc {
+.text-muted  {
   font-size: 18px;
   font-weight: 300;
   margin-top: 35px;
   line-height: 1.4em;
 }
 
-.desc {
-  margin-top: 18px;
-}
+article {
+  padding: 10% 0px;
+  text-align: center;
 
-.mt {
-  margin-top: 95px;
+  .desc {
+    border-top:1px solid rgba(255, 255, 255, 0.4);
+    padding:20px;
+  }
 }
 
 .fullstory {
   background-color: #1DAFEC;
 }
 
-.fullstory .logo {
-  background-image: url("/assets/fullstorylogo.png");
-  background-size: 158px 51px;
-  width: 158px;
-  height: 51px;
+.homebase {
+  background-color: #39464D;
+}
+
+.google {
+  background-color: #fff;
+}
+
+.google .logo {
+  background-image: url("/assets/google.png");
+  background-size: 650px 226px;
+  width: 650px;
+  height: 226px;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
+  margin: 0px auto 50px auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .google .logo {
+    background-image: url("/assets/google@2x.png");
+  }
+}
+
+.homebase .logo {
+  background-image: url("/assets/hblogo.png");
+  background-size: 641px 147px;
+  width: 641px;
+  height: 147px;
+  background-repeat: no-repeat;
+  margin: 0px auto 50px auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .homebase .logo {
+    background-image: url("/assets/hblogo@2x.png");
+  }
+}
+
+.fullstory .logo {
+  background-image: url("/assets/fslogo.png");
+  background-size: 651px 210px;
+  width: 651px;
+  height: 210px;
+  background-repeat: no-repeat;
+  margin: 0px auto 50px auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .fullstory .logo {
-    background-image: url("/assets/fullstorylogo@2x.png");
+    background-image: url("/assets/fslogo@2x.png");
   }
 }
 .fullstory a {
@@ -133,8 +213,8 @@ h1 {
     margin-top: 60px;
   }
 
-  .mt {
-    margin-top: 50px;
+  .bio {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 480px) {
@@ -151,7 +231,7 @@ h1 {
     font-size: 24px;
   }
 
-  .mt {
-    margin-top: 30px;
+  .bio {
+    margin-bottom: 30px;
   }
 }
