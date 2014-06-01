@@ -16,22 +16,21 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
-  color: #fff;
 }
 
-/* line 19, ../_sass/custom.scss */
+/* line 18, ../_sass/custom.scss */
 .site {
   width: auto;
   max-width: 960px;
   padding: 0px 15px;
 }
 
-/* line 25, ../_sass/custom.scss */
+/* line 24, ../_sass/custom.scss */
 .header {
   margin-top: 90px;
 }
 
-/* line 29, ../_sass/custom.scss */
+/* line 28, ../_sass/custom.scss */
 h1 {
   font-size: 32px;
   text-shadow: 0 1px 0 #fff;
@@ -41,7 +40,7 @@ h1 {
   margin-top: 0px;
 }
 
-/* line 38, ../_sass/custom.scss */
+/* line 37, ../_sass/custom.scss */
 .btn {
   border-radius: 3px;
   padding: 9px 18px;
@@ -52,7 +51,7 @@ h1 {
   margin-top: -3px;
 }
 
-/* line 48, ../_sass/custom.scss */
+/* line 47, ../_sass/custom.scss */
 .twtr {
   background-image: url("/assets/twitter.png");
   background-size: 35px 29px;
@@ -65,36 +64,36 @@ h1 {
   top: 2px;
   transition: background .2s ease-in-out;
 }
-/* line 60, ../_sass/custom.scss */
+/* line 59, ../_sass/custom.scss */
 .twtr:hover {
   background-image: url("/assets/twitter-hover.png");
   cursor: pointer;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 66, ../_sass/custom.scss */
+  /* line 65, ../_sass/custom.scss */
   .twtr .twtr {
     background-image: url("/assets/twitter@2x.png");
   }
-  /* line 69, ../_sass/custom.scss */
+  /* line 68, ../_sass/custom.scss */
   .twtr .twtr:hover {
     background-image: url("/assets/twitter-hover@2x.png");
   }
 }
 
-/* line 77, ../_sass/custom.scss */
+/* line 76, ../_sass/custom.scss */
 .btn-default {
   border-color: #C2CDD6;
   transition: all .2s ease-in-out;
   border-radius: 2px;
 }
-/* line 82, ../_sass/custom.scss */
+/* line 81, ../_sass/custom.scss */
 .btn-default:hover {
   background-color: #1DAFEC;
   border: 1px solid #1DAFEC;
   color: #fff;
 }
 
-/* line 89, ../_sass/custom.scss */
+/* line 88, ../_sass/custom.scss */
 .bio {
   font-size: 32px;
   color: #333;
@@ -105,33 +104,33 @@ h1 {
   margin-bottom: 90px;
 }
 
-/* line 99, ../_sass/custom.scss */
+/* line 98, ../_sass/custom.scss */
 .bio a {
   font-weight: inherit;
   color: #2C75F6;
 }
 
-/* line 104, ../_sass/custom.scss */
+/* line 103, ../_sass/custom.scss */
 .g {
   color: #2C75F6;
 }
 
-/* line 108, ../_sass/custom.scss */
+/* line 107, ../_sass/custom.scss */
 .o1 {
   color: #DC4935;
 }
 
-/* line 112, ../_sass/custom.scss */
+/* line 111, ../_sass/custom.scss */
 .o2 {
   color: #FFC708;
 }
 
-/* line 116, ../_sass/custom.scss */
+/* line 115, ../_sass/custom.scss */
 .l {
   color: #009857;
 }
 
-/* line 120, ../_sass/custom.scss */
+/* line 119, ../_sass/custom.scss */
 .text-muted {
   font-size: 18px;
   font-weight: 300;
@@ -139,33 +138,32 @@ h1 {
   line-height: 1.4em;
 }
 
-/* line 127, ../_sass/custom.scss */
+/* line 126, ../_sass/custom.scss */
 article {
   padding: 10% 0px;
-  text-align: center;
 }
-/* line 131, ../_sass/custom.scss */
+/* line 129, ../_sass/custom.scss */
 article .desc {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding: 20px;
 }
 
-/* line 137, ../_sass/custom.scss */
+/* line 135, ../_sass/custom.scss */
 .fullstory {
   background-color: #1DAFEC;
 }
 
-/* line 141, ../_sass/custom.scss */
+/* line 139, ../_sass/custom.scss */
 .homebase {
   background-color: #39464D;
 }
 
-/* line 145, ../_sass/custom.scss */
+/* line 143, ../_sass/custom.scss */
 .google {
   background-color: #fff;
 }
 
-/* line 149, ../_sass/custom.scss */
+/* line 147, ../_sass/custom.scss */
 .google .logo {
   background-image: url("/assets/google.png");
   background-size: 650px 226px;
@@ -176,12 +174,12 @@ article .desc {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 158, ../_sass/custom.scss */
+  /* line 156, ../_sass/custom.scss */
   .google .logo {
     background-image: url("/assets/google@2x.png");
   }
 }
-/* line 163, ../_sass/custom.scss */
+/* line 161, ../_sass/custom.scss */
 .homebase .logo {
   background-image: url("/assets/hblogo.png");
   background-size: 641px 147px;
@@ -192,12 +190,12 @@ article .desc {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 172, ../_sass/custom.scss */
+  /* line 170, ../_sass/custom.scss */
   .homebase .logo {
     background-image: url("/assets/hblogo@2x.png");
   }
 }
-/* line 177, ../_sass/custom.scss */
+/* line 175, ../_sass/custom.scss */
 .fullstory .logo {
   background-image: url("/assets/fslogo.png");
   background-size: 651px 210px;
@@ -208,12 +206,12 @@ article .desc {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 186, ../_sass/custom.scss */
+  /* line 184, ../_sass/custom.scss */
   .fullstory .logo {
     background-image: url("/assets/fslogo@2x.png");
   }
 }
-/* line 190, ../_sass/custom.scss */
+/* line 188, ../_sass/custom.scss */
 .fullstory a {
   color: #fff;
   font-weight: 600;
@@ -223,7 +221,7 @@ article .desc {
   padding-right: 14px;
 }
 
-/* line 198, ../_sass/custom.scss */
+/* line 196, ../_sass/custom.scss */
 .fullstory a:after {
   position: absolute;
   top: 50%;
@@ -237,35 +235,100 @@ article .desc {
   background-size: 6px 9px;
 }
 
+/* line 209, ../_sass/custom.scss */
+.blog {
+  margin: 100px;
+}
+/* line 211, ../_sass/custom.scss */
+.blog p {
+  color: #333;
+  text-align: left;
+}
+
+/* line 217, ../_sass/custom.scss */
+.post {
+  max-width: 615px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* line 222, ../_sass/custom.scss */
+.post .post-header {
+  padding: 40px 0px 20px;
+}
+/* line 226, ../_sass/custom.scss */
+.post h1 {
+  margin-bottom: 0px;
+  display: inline;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #474747;
+}
+/* line 235, ../_sass/custom.scss */
+.post p {
+  margin-top: 12px;
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+/* line 243, ../_sass/custom.scss */
+.post .meta {
+  color: #999;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 248, ../_sass/custom.scss */
+.post article {
+  padding: 0px;
+}
+/* line 251, ../_sass/custom.scss */
+.post blockquote {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-left: 4px solid #FF4059;
+}
+/* line 258, ../_sass/custom.scss */
+.post blockquote p {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.6em;
+}
+
 @media (max-width: 979px) {
-  /* line 212, ../_sass/custom.scss */
+  /* line 268, ../_sass/custom.scss */
   .header {
     margin-top: 60px;
   }
 
-  /* line 216, ../_sass/custom.scss */
+  /* line 272, ../_sass/custom.scss */
   .bio {
     margin-bottom: 50px;
   }
 }
 @media (max-width: 480px) {
-  /* line 221, ../_sass/custom.scss */
+  /* line 277, ../_sass/custom.scss */
   .header {
     margin-top: 20px;
   }
 
-  /* line 225, ../_sass/custom.scss */
+  /* line 281, ../_sass/custom.scss */
   h1 {
     font-size: 24px;
     margin-top: 7px;
   }
 
-  /* line 230, ../_sass/custom.scss */
+  /* line 286, ../_sass/custom.scss */
   .bio {
     font-size: 24px;
   }
 
-  /* line 234, ../_sass/custom.scss */
+  /* line 290, ../_sass/custom.scss */
   .bio {
     margin-bottom: 30px;
   }

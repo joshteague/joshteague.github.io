@@ -13,7 +13,6 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
-  color:#fff;
 }
 
 .site {
@@ -126,7 +125,6 @@ h1 {
 
 article {
   padding: 10% 0px;
-  text-align: center;
 
   .desc {
     border-top:1px solid rgba(255, 255, 255, 0.4);
@@ -206,6 +204,64 @@ article {
   content: "";
   background-image: url("/assets/chevron-x2.png");
   background-size: 6px 9px;
+}
+
+.blog {
+  margin:100px;
+  p {
+    color:#333;
+    text-align: left;
+  }
+}
+
+.post {
+  max-width: 615px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .post-header {
+    padding:40px 0px 20px;
+  }
+
+  h1 {
+    margin-bottom:0px;
+    display: inline;
+    font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    color: #474747;
+  }
+  p {
+    margin-top: 12px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7em
+  }
+  .meta {
+    color:#999;
+    padding:0px;
+    margin:0px;
+  }
+  article {
+    padding:0px;
+  }
+  blockquote {
+    margin-top:24px;
+    margin-bottom: 24px;
+    padding-top:0px;
+    padding-bottom: 0px;
+    border-left: 4px solid #FF4059;
+
+    p { 
+      font-size:18px;
+      font-weight:600;
+      font-style: italic;
+      line-height: 1.6em;
+    }
+  }
 }
 
 @media (max-width: 979px) {
