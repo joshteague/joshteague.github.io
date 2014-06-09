@@ -1,4 +1,6 @@
 $bodyBlue: #1DAFEC;
+$grayText: #96A2AC;
+$linkColor: #2C75F6;
 
 * {
   margin: 0;
@@ -22,7 +24,7 @@ body {
 }
 
 .header {
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 h1 {
@@ -85,6 +87,69 @@ h1 {
   }
 }
 
+.site-header {
+  .row {
+    padding-top:25px;
+    padding-bottom: 25px;
+    border-bottom:1px solid #ebebeb;
+  }
+  ul {
+    text-align: right;
+  }
+  li {
+    display: inline;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-left: 42px;
+
+    a {
+      color:$grayText;
+      padding-bottom: 38px;
+    }
+    a:hover, .active {
+      color:$linkColor;
+      border-bottom: 1px solid $linkColor;
+      padding-bottom:38px;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog { 
+  margin-top:36px;
+  li {
+    list-style-type: none;
+    margin-bottom: 26px;
+  }
+  a {
+    display: block;
+    font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+    font-weight: 500;
+    font-style: italic;
+    color:#474747;
+    font-size: 24px;
+  }
+}
+
+.site-title {
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+  font-weight: 600;
+  font-style: normal;
+  color:#3E5261;
+  text-decoration: none;
+  font-size:13px;
+
+  &:hover {
+    text-decoration:none;
+  }
+
+  .whatido {
+    font-style: italic;
+    color: $grayText;
+    font-weight: 500;
+  }
+}
+
 .bio {
   font-size: 32px;
   color: #333;
@@ -92,7 +157,8 @@ h1 {
   line-height: 1.45em;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  margin-bottom: 90px;
+  margin: 80px auto;
+  max-width:970px;
 }
 
 .bio a {
@@ -121,6 +187,7 @@ h1 {
   font-weight: 300;
   margin-top: 35px;
   line-height: 1.4em;
+  color:$grayText;
 }
 
 article {
@@ -134,80 +201,79 @@ article {
 
 .fullstory {
   background-color: #1DAFEC;
+
+  .logo {
+    background: url("/assets/fslogo.png") no-repeat center;
+    background-size: contain;
+    height: 210px;
+  }
+
+  a {
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 14px;
+  }
+  a:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 0;
+    vertical-align: middle;
+    width: 6px;
+    height: 9px;
+    content: "";
+    background-image: url("/assets/chevron-x2.png");
+    background-size: 6px 9px;
+  }
 }
 
 .homebase {
   background-color: #39464D;
+
+  .logo {
+    background: url("/assets/hblogo.png") no-repeat center;
+    background-size: contain;
+    height: 147px;
+  }
 }
 
 .google {
   background-color: #fff;
+
+  .logo {
+    background: url("/assets/google.png") no-repeat center;
+    background-size: contain;
+    height: 226px;
+  }
 }
 
-.google .logo {
-  background-image: url("/assets/google.png");
-  background-size: 650px 226px;
-  width: 650px;
-  height: 226px;
-  background-repeat: no-repeat;
-  margin: 0px auto 50px auto;
-}
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .google .logo {
-    background-image: url("/assets/google@2x.png");
+    background: url("/assets/google@2x.png");
   }
 }
 
-.homebase .logo {
-  background-image: url("/assets/hblogo.png");
-  background-size: 641px 147px;
-  width: 641px;
-  height: 147px;
-  background-repeat: no-repeat;
-  margin: 0px auto 50px auto;
-}
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .homebase .logo {
-    background-image: url("/assets/hblogo@2x.png");
+    background: url("/assets/hblogo@2x.png");
   }
 }
 
-.fullstory .logo {
-  background-image: url("/assets/fslogo.png");
-  background-size: 651px 210px;
-  width: 651px;
-  height: 210px;
-  background-repeat: no-repeat;
-  margin: 0px auto 50px auto;
-}
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .fullstory .logo {
-    background-image: url("/assets/fslogo@2x.png");
+    background: url("/assets/fslogo@2x.png");
   }
 }
-.fullstory a {
-  color: #fff;
-  font-weight: 600;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-right: 14px;
-}
-.fullstory a:after {
-  position: absolute;
-  top: 50%;
-  margin-top: -5px;
-  right: 0;
-  vertical-align: middle;
-  width: 6px;
-  height: 9px;
-  content: "";
-  background-image: url("/assets/chevron-x2.png");
-  background-size: 6px 9px;
+
+.logo {
+  margin-left:15px;
+  margin-right:15px;
 }
 
 .blog {
-  margin:100px;
   p {
     color:#333;
     text-align: left;
@@ -215,9 +281,9 @@ article {
 }
 
 .post {
-  max-width: 615px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
 
   .post-header {
     padding:40px 0px 20px;
@@ -227,7 +293,7 @@ article {
     margin-bottom:0px;
     display: inline;
     font-family: 'Sentinel SSm A', 'Sentinel SSm B';
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 26px;
     color: #474747;
@@ -237,11 +303,13 @@ article {
     font-family: 'Whitney SSm A', 'Whitney SSm B';
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7em
   }
   .meta {
     color:#999;
+    text-transform: uppercase;
+    font-size:12px;
     padding:0px;
     margin:0px;
   }
@@ -256,28 +324,54 @@ article {
     border-left: 4px solid #FF4059;
 
     p { 
-      font-size:18px;
+      font-size:20px;
       font-weight:600;
       font-style: italic;
       line-height: 1.6em;
     }
   }
   img {
-    max-width:800px;
-    margin:14px -90px;
+    height:auto;
+    max-width:100%;
   }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 991px) {
+  .site-header {
+    .row {  
+    }
+    ul {
+      text-align: left;
+    }
+    li {
+      padding-left: 20px;
+    }
+  }
+
   .header {
     margin-top: 60px;
   }
 
   .bio {
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .site-header {
+    .row {  
+      text-align: center;
+    }
+    ul {
+      padding-top:8px ;
+      text-align: center;
+    }
+    li {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   .header {
     margin-top: 20px;
   }
@@ -289,9 +383,7 @@ article {
 
   .bio {
     font-size: 24px;
-  }
-
-  .bio {
+    margin-top: 20px;
     margin-bottom: 30px;
   }
 }
