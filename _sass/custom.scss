@@ -253,6 +253,7 @@ article {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .google .logo {
     background: url("/assets/google@2x.png") no-repeat center;
+    background-size: contain;
     height: 226px;
   }
 }
@@ -260,6 +261,7 @@ article {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .homebase .logo {
     background: url("/assets/hblogo@2x.png") no-repeat center;
+    background-size: contain;
     height: 147px;
   }
 }
