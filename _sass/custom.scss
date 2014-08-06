@@ -1,6 +1,9 @@
 $bodyBlue: #1DAFEC;
 $grayText: #96A2AC;
-$linkColor: #2C75F6;
+$bodyTextColor: #4B6274;
+$linkColor: #FF693E;
+$sentinel: 'Sentinel SSm A', 'Sentinel SSm B';
+
 
 * {
   margin: 0;
@@ -89,28 +92,24 @@ h1 {
 
 .site-header {
   .row {
-    padding-top:25px;
-    padding-bottom: 25px;
-    border-bottom:1px solid #ebebeb;
+    padding-top:60px;
+    padding-bottom: 30px;
+    border-bottom:1px dotted #ebebeb;
   }
   ul {
-    text-align: right;
+    margin-top: 12px;
   }
   li {
-    display: inline;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding-left: 42px;
+    font-size: 14px;
+    list-style: none;
+    line-height: 1.9em;
 
     a {
-      color:$grayText;
-      padding-bottom: 38px;
+      color:$bodyTextColor;
     }
     a:hover, .active {
       color:$linkColor;
-      border-bottom: 1px solid $linkColor;
-      padding-bottom:38px;
-      text-decoration: none;
+      font-weight: 600;
     }
   }
 }
@@ -151,14 +150,12 @@ h1 {
 }
 
 .bio {
-  font-size: 32px;
-  color: #333;
-  font-weight: 300;
-  line-height: 1.45em;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
-  margin: 80px auto;
-  max-width:970px;
+  margin-top:12px;
+  line-height: 1.9em;
+  font-family:$sentinel;
+  border-left: 2px solid #E4E8EB;
+  padding-left:20px;
+  color:$bodyTextColor;
 }
 
 .bio a {
