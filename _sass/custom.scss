@@ -1,8 +1,11 @@
 $bodyBlue: #1DAFEC;
 $grayText: #96A2AC;
 $bodyTextColor: #4B6274;
-$linkColor: #FF693E;
+$hotRed: #FF4059;
+$red: #FF693E;
+$grayDivider: 1px dotted #E4E8EB;
 $sentinel: 'Sentinel SSm A', 'Sentinel SSm B';
+$whitney: 'Whitney SSm A', 'Whitney SSm B';
 
 
 * {
@@ -18,6 +21,12 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 880px;
 }
 
 .site {
@@ -37,6 +46,7 @@ h1 {
   font-weight: 600;
   margin-bottom: 50px;
   margin-top:0px;
+  font-family: $whitney;
 }
 
 .btn {
@@ -94,7 +104,7 @@ h1 {
   .row {
     padding-top:60px;
     padding-bottom: 30px;
-    border-bottom:1px dotted #ebebeb;
+    border-bottom:$grayDivider;
   }
   ul {
     margin-top: 12px;
@@ -107,26 +117,27 @@ h1 {
     a {
       color:$bodyTextColor;
     }
-    a:hover, .active {
-      color:$linkColor;
+
+    .active {
+      color:$red;
       font-weight: 600;
     }
   }
 }
 
 .blog { 
-  margin-top:36px;
+  margin-top:60px;
   li {
     list-style-type: none;
-    margin-bottom: 26px;
+    margin-bottom: 40px;
+    border-bottom: $grayDivider;
+    padding-bottom: 30px;
   }
   a {
     display: block;
-    font-family: 'Sentinel SSm A', 'Sentinel SSm B';
     font-weight: 500;
     font-style: italic;
     color:#474747;
-    font-size: 24px;
   }
 }
 
@@ -151,6 +162,7 @@ h1 {
 
 .bio {
   margin-top:12px;
+  margin-left:60px;
   line-height: 1.9em;
   font-family:$sentinel;
   border-left: 2px solid #E4E8EB;
@@ -160,7 +172,7 @@ h1 {
 
 .bio a {
   font-weight: inherit;
-  color: #2C75F6;
+  color: $red;
 }
 
 .g {
@@ -278,65 +290,68 @@ article {
 
 .blog {
   p {
-    color:#333;
     text-align: left;
+
+    img {
+      margin:16px 0px 16px -160px;
+      max-width:880px;
+    }
   }
 }
 
-.post {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 20px 20px 60px 20px;
 
-  .post-header {
-    padding:40px 0px 20px;
-  }
+.post-header {
+    padding:60px 0px 0px;
+}
 
-  h1 {
-    margin-bottom:0px;
-    display: inline;
-    font-family: 'Sentinel SSm A', 'Sentinel SSm B';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 26px;
-    color: #474747;
-  }
-  p {
-    margin-top: 12px;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.7em
-  }
-  .meta {
-    color:#999;
-    text-transform: uppercase;
-    font-size:12px;
-    padding:0px;
-    margin:0px;
-  }
-  article {
-    padding:0px;
-  }
-  blockquote {
-    margin-top:24px;
-    margin-bottom: 24px;
-    padding-top:0px;
-    padding-bottom: 0px;
-    border-left: 4px solid #FF4059;
+h1 {
+  margin-bottom:0px;
+  display: inline;
+  font-family: $whitney;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: $red;
+}
+p {
+  margin-top: 12px;
+  font-family: $sentinel;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #4b6274;
+}
+.meta {
+  color:$grayText;
+  text-transform: uppercase;
+  font-size:12px;
+  padding:0px;
+  margin:0px;
+  font-family: $whitney;
+  margin-bottom:30px;
+  font-weight: 500;
+}
+article {
+  padding:0px;
+}
+blockquote {
+  margin-top:24px;
+  margin-bottom: 24px;
+  padding-top:0px;
+  padding-bottom: 0px;
+  border-left: 2px solid $red;
 
-    p { 
-      font-size:20px;
-      font-weight:600;
-      font-style: italic;
-      line-height: 1.6em;
-    }
+  p { 
+    font-size:20px;
+    font-weight:600;
+    font-style: italic;
+    line-height: 1.6em;
   }
-  img {
-    height:auto;
-    max-width:100%;
-  }
+}
+img {
+  height:auto;
+  max-width:100%;
 }
 
 @media (max-width: 991px) {

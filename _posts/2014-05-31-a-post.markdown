@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Harrys.com Site Design"
+title:  "Behind the Design of Fullstory 'Highlights'"
 date:   2014-05-31 22:45:17
 ---
 It’s all well and good to have posts in a folder, but a blog is no use unless you have a list of posts somewhere. Creating an index of posts on another page (or in a template) is easy, thanks to the Liquid template language and its tags. 
 	
 Here’s a basic example of how to create a list of links to your blog posts.
 
-![Whitney Font]({{ site.url }}/assets/harrys.png)	
+![FullStory Highlights](/assets/highlights.png)	
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
 
