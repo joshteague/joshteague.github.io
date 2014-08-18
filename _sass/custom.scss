@@ -125,8 +125,24 @@ h1 {
   }
 }
 
-.blog { 
+.site-footer {
   margin-top:60px;
+  height:80px;
+  color: $grayText;
+  font-size: 12px;
+}
+
+.page-content {
+    padding-top:60px;
+}
+
+#home { 
+
+  p img {
+    margin-left:-160px;
+    max-width:880px;
+  }
+
   li {
     list-style-type: none;
     margin-bottom: 60px;
@@ -138,6 +154,18 @@ h1 {
     font-weight: 500;
     font-style: italic;
     color:#474747;
+
+    &:hover {
+      text-decoration:underline;
+      color:$red;
+    }
+  }
+}
+
+#post {
+  p img {
+    margin-left:-160px;
+    max-width:880px;
   }
 }
 
@@ -288,22 +316,6 @@ article {
   margin-right:15px;
 }
 
-.blog {
-  p {
-    text-align: left;
-
-    img {
-      margin:0px 0px 0px -160px;
-      max-width:880px;
-    }
-  }
-}
-
-
-.post-header {
-    padding:60px 0px 0px;
-}
-
 h1 {
   margin-bottom:0px;
   display: inline;
@@ -338,6 +350,7 @@ article {
 blockquote {
   margin-top:24px;
   margin-bottom: 24px;
+  margin-left:-20px;
   padding-top:0px;
   padding-bottom: 0px;
   border-left: 2px solid $red;
@@ -353,6 +366,74 @@ blockquote {
 img {
   height:auto;
   max-width:100%;
+}
+
+#contact {
+  p {
+    font-size:13px;
+    font-family: $whitney;
+    font-style: italic;
+    color:#949AA0;
+  }
+  ul {
+    border-top:2px solid #E4E8EB;
+    padding:16px 0px;
+    margin-top:10px;
+    color:#949AA0;
+  }
+  li {
+    font-size:13px;
+    list-style:none;
+    padding:3px 0px;
+
+    a {
+      color:$red;
+    }
+  }
+  form {
+    margin-left:10px;
+  }
+  input {
+    display: block;
+    padding:7px 0px;
+
+    &:focus{
+      border-bottom:2px solid $red;
+    }
+  }
+  .email {
+    width:100%;
+    font-size:24px;
+    border:none;
+    border-bottom:2px solid #E4E8EB;
+    font-family: $sentinel;
+    padding:0px 0px 5px 0px; 
+    outline:none;
+  }
+  .msg {
+    width:100%;
+    font-size:24px;
+    padding:7px 0px;
+    border:none;
+    border-bottom:2px solid #E4E8EB;
+    outline:none;
+    height:185px;
+    font-family: $sentinel;
+
+    &:focus{
+      border-bottom:2px solid $red;
+    }
+  }
+  .sendBtn {
+    background-color:$red;
+    color:#fff;
+    border:none;
+    padding:14px;
+    width: 100%;
+    box-shadow: 0px 3px 0px #D35632;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 991px) {

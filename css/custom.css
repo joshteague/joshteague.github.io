@@ -128,25 +128,50 @@ h1 {
 }
 
 /* line 128, ../_sass/custom.scss */
-.blog {
+.site-footer {
   margin-top: 60px;
+  height: 80px;
+  color: #96a2ac;
+  font-size: 12px;
 }
-/* line 130, ../_sass/custom.scss */
-.blog li {
+
+/* line 135, ../_sass/custom.scss */
+.page-content {
+  padding-top: 60px;
+}
+
+/* line 141, ../_sass/custom.scss */
+#home p img {
+  margin-left: -160px;
+  max-width: 880px;
+}
+/* line 146, ../_sass/custom.scss */
+#home li {
   list-style-type: none;
   margin-bottom: 60px;
   border-bottom: 1px dotted #e4e8eb;
   padding-bottom: 60px;
 }
-/* line 136, ../_sass/custom.scss */
-.blog a {
+/* line 152, ../_sass/custom.scss */
+#home a {
   display: block;
   font-weight: 500;
   font-style: italic;
   color: #474747;
 }
+/* line 158, ../_sass/custom.scss */
+#home a:hover {
+  text-decoration: underline;
+  color: #ff693e;
+}
 
-/* line 144, ../_sass/custom.scss */
+/* line 166, ../_sass/custom.scss */
+#post p img {
+  margin-left: -160px;
+  max-width: 880px;
+}
+
+/* line 172, ../_sass/custom.scss */
 .site-title {
   font-family: 'Sentinel SSm A', 'Sentinel SSm B';
   font-weight: 600;
@@ -155,18 +180,18 @@ h1 {
   text-decoration: none;
   font-size: 13px;
 }
-/* line 152, ../_sass/custom.scss */
+/* line 180, ../_sass/custom.scss */
 .site-title:hover {
   text-decoration: none;
 }
-/* line 156, ../_sass/custom.scss */
+/* line 184, ../_sass/custom.scss */
 .site-title .whatido {
   font-style: italic;
   color: #96a2ac;
   font-weight: 500;
 }
 
-/* line 163, ../_sass/custom.scss */
+/* line 191, ../_sass/custom.scss */
 .bio {
   margin-top: 12px;
   margin-left: 60px;
@@ -177,33 +202,33 @@ h1 {
   color: #4b6274;
 }
 
-/* line 173, ../_sass/custom.scss */
+/* line 201, ../_sass/custom.scss */
 .bio a {
   font-weight: inherit;
   color: #ff693e;
 }
 
-/* line 178, ../_sass/custom.scss */
+/* line 206, ../_sass/custom.scss */
 .g {
   color: #2C75F6;
 }
 
-/* line 182, ../_sass/custom.scss */
+/* line 210, ../_sass/custom.scss */
 .o1 {
   color: #DC4935;
 }
 
-/* line 186, ../_sass/custom.scss */
+/* line 214, ../_sass/custom.scss */
 .o2 {
   color: #FFC708;
 }
 
-/* line 190, ../_sass/custom.scss */
+/* line 218, ../_sass/custom.scss */
 .l {
   color: #009857;
 }
 
-/* line 194, ../_sass/custom.scss */
+/* line 222, ../_sass/custom.scss */
 .text-muted {
   font-size: 18px;
   font-weight: 300;
@@ -212,27 +237,27 @@ h1 {
   color: #96a2ac;
 }
 
-/* line 202, ../_sass/custom.scss */
+/* line 230, ../_sass/custom.scss */
 article {
   padding: 10% 0px;
 }
-/* line 205, ../_sass/custom.scss */
+/* line 233, ../_sass/custom.scss */
 article .desc {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding: 20px;
 }
 
-/* line 211, ../_sass/custom.scss */
+/* line 239, ../_sass/custom.scss */
 .fullstory {
   background-color: #1DAFEC;
 }
-/* line 214, ../_sass/custom.scss */
+/* line 242, ../_sass/custom.scss */
 .fullstory .logo {
   background: url("/assets/fslogo.png") no-repeat center;
   background-size: contain;
   height: 210px;
 }
-/* line 220, ../_sass/custom.scss */
+/* line 248, ../_sass/custom.scss */
 .fullstory a {
   color: #fff;
   font-weight: 600;
@@ -241,7 +266,7 @@ article .desc {
   font-size: 12px;
   padding-right: 14px;
 }
-/* line 228, ../_sass/custom.scss */
+/* line 256, ../_sass/custom.scss */
 .fullstory a:after {
   position: absolute;
   top: 50%;
@@ -255,22 +280,22 @@ article .desc {
   background-size: 6px 9px;
 }
 
-/* line 242, ../_sass/custom.scss */
+/* line 270, ../_sass/custom.scss */
 .homebase {
   background-color: #39464D;
 }
-/* line 245, ../_sass/custom.scss */
+/* line 273, ../_sass/custom.scss */
 .homebase .logo {
   background: url("/assets/hblogo.png") no-repeat center;
   background-size: contain;
   height: 147px;
 }
 
-/* line 252, ../_sass/custom.scss */
+/* line 280, ../_sass/custom.scss */
 .google {
   background-color: #fff;
 }
-/* line 255, ../_sass/custom.scss */
+/* line 283, ../_sass/custom.scss */
 .google .logo {
   background: url("/assets/google.png") no-repeat center;
   background-size: contain;
@@ -278,7 +303,7 @@ article .desc {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 263, ../_sass/custom.scss */
+  /* line 291, ../_sass/custom.scss */
   .google .logo {
     background: url("/assets/google@2x.png") no-repeat center;
     background-size: contain;
@@ -286,7 +311,7 @@ article .desc {
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 271, ../_sass/custom.scss */
+  /* line 299, ../_sass/custom.scss */
   .homebase .logo {
     background: url("/assets/hblogo@2x.png") no-repeat center;
     background-size: contain;
@@ -294,35 +319,20 @@ article .desc {
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 279, ../_sass/custom.scss */
+  /* line 307, ../_sass/custom.scss */
   .fullstory .logo {
     background: url("/assets/fslogo@2x.png") no-repeat center;
     background-size: contain;
     height: 210px;
   }
 }
-/* line 286, ../_sass/custom.scss */
+/* line 314, ../_sass/custom.scss */
 .logo {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-/* line 292, ../_sass/custom.scss */
-.blog p {
-  text-align: left;
-}
-/* line 295, ../_sass/custom.scss */
-.blog p img {
-  margin: 0px 0px 0px -160px;
-  max-width: 880px;
-}
-
-/* line 303, ../_sass/custom.scss */
-.post-header {
-  padding: 60px 0px 0px;
-}
-
-/* line 307, ../_sass/custom.scss */
+/* line 319, ../_sass/custom.scss */
 h1 {
   margin-bottom: 0px;
   display: inline;
@@ -333,7 +343,7 @@ h1 {
   color: #ff693e;
 }
 
-/* line 316, ../_sass/custom.scss */
+/* line 328, ../_sass/custom.scss */
 p {
   margin-top: 30px;
   font-family: "Sentinel SSm A", "Sentinel SSm B";
@@ -344,7 +354,7 @@ p {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 325, ../_sass/custom.scss */
+/* line 337, ../_sass/custom.scss */
 .meta {
   color: #96a2ac;
   text-transform: uppercase;
@@ -356,20 +366,21 @@ p {
   font-weight: 500;
 }
 
-/* line 335, ../_sass/custom.scss */
+/* line 347, ../_sass/custom.scss */
 article {
   padding: 0px;
 }
 
-/* line 338, ../_sass/custom.scss */
+/* line 350, ../_sass/custom.scss */
 blockquote {
   margin-top: 24px;
   margin-bottom: 24px;
+  margin-left: -20px;
   padding-top: 0px;
   padding-bottom: 0px;
   border-left: 2px solid #ff693e;
 }
-/* line 345, ../_sass/custom.scss */
+/* line 358, ../_sass/custom.scss */
 blockquote p {
   font-size: 20px;
   font-weight: 500;
@@ -378,61 +389,135 @@ blockquote p {
   font-family: "Whitney SSm A", "Whitney SSm B";
 }
 
-/* line 353, ../_sass/custom.scss */
+/* line 366, ../_sass/custom.scss */
 img {
   height: auto;
   max-width: 100%;
 }
 
+/* line 372, ../_sass/custom.scss */
+#contact p {
+  font-size: 13px;
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: italic;
+  color: #949AA0;
+}
+/* line 378, ../_sass/custom.scss */
+#contact ul {
+  border-top: 2px solid #E4E8EB;
+  padding: 16px 0px;
+  margin-top: 10px;
+  color: #949AA0;
+}
+/* line 384, ../_sass/custom.scss */
+#contact li {
+  font-size: 13px;
+  list-style: none;
+  padding: 3px 0px;
+}
+/* line 389, ../_sass/custom.scss */
+#contact li a {
+  color: #ff693e;
+}
+/* line 393, ../_sass/custom.scss */
+#contact form {
+  margin-left: 10px;
+}
+/* line 396, ../_sass/custom.scss */
+#contact input {
+  display: block;
+  padding: 7px 0px;
+}
+/* line 400, ../_sass/custom.scss */
+#contact input:focus {
+  border-bottom: 2px solid #ff693e;
+}
+/* line 404, ../_sass/custom.scss */
+#contact .email {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #E4E8EB;
+  font-family: "Sentinel SSm A", "Sentinel SSm B";
+  padding: 0px 0px 5px 0px;
+  outline: none;
+}
+/* line 413, ../_sass/custom.scss */
+#contact .msg {
+  width: 100%;
+  font-size: 24px;
+  padding: 7px 0px;
+  border: none;
+  border-bottom: 2px solid #E4E8EB;
+  outline: none;
+  height: 185px;
+  font-family: "Sentinel SSm A", "Sentinel SSm B";
+}
+/* line 423, ../_sass/custom.scss */
+#contact .msg:focus {
+  border-bottom: 2px solid #ff693e;
+}
+/* line 427, ../_sass/custom.scss */
+#contact .sendBtn {
+  background-color: #ff693e;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  box-shadow: 0px 3px 0px #D35632;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 @media (max-width: 991px) {
-  /* line 362, ../_sass/custom.scss */
+  /* line 443, ../_sass/custom.scss */
   .site-header ul {
     text-align: left;
   }
-  /* line 365, ../_sass/custom.scss */
+  /* line 446, ../_sass/custom.scss */
   .site-header li {
     padding-left: 20px;
   }
 
-  /* line 370, ../_sass/custom.scss */
+  /* line 451, ../_sass/custom.scss */
   .header {
     margin-top: 60px;
   }
 
-  /* line 374, ../_sass/custom.scss */
+  /* line 455, ../_sass/custom.scss */
   .bio {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
-  /* line 381, ../_sass/custom.scss */
+  /* line 462, ../_sass/custom.scss */
   .site-header .row {
     text-align: center;
   }
-  /* line 384, ../_sass/custom.scss */
+  /* line 465, ../_sass/custom.scss */
   .site-header ul {
     padding-top: 8px;
     text-align: center;
   }
-  /* line 388, ../_sass/custom.scss */
+  /* line 469, ../_sass/custom.scss */
   .site-header li {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* line 394, ../_sass/custom.scss */
+  /* line 475, ../_sass/custom.scss */
   .header {
     margin-top: 20px;
   }
 
-  /* line 398, ../_sass/custom.scss */
+  /* line 479, ../_sass/custom.scss */
   h1 {
     font-size: 24px;
     margin-top: 7px;
   }
 
-  /* line 403, ../_sass/custom.scss */
+  /* line 484, ../_sass/custom.scss */
   .bio {
     font-size: 20px;
     margin-top: 20px;
