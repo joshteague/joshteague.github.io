@@ -162,7 +162,7 @@ h1 {
   }
 }
 
-#post {
+#post, #contact {
   p img {
     margin-left:-160px;
     max-width:880px;
@@ -325,6 +325,7 @@ h1 {
   font-size: 28px;
   color: $red;
 }
+
 p {
   margin-top: 30px;
   font-family: $sentinel;
@@ -334,6 +335,7 @@ p {
   line-height: 1.7em;
   color: rgba(0,0,0,0.8);
 }
+
 .meta {
   color:$grayText;
   text-transform: uppercase;
@@ -366,6 +368,12 @@ blockquote {
 img {
   height:auto;
   max-width:100%;
+}
+
+#about {
+  p {
+
+  }
 }
 
 #contact {
