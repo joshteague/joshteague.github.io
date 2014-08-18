@@ -7,9 +7,23 @@
 		    </div>
 		    <div class='col-xs-12 col-sm-2 col-md-2'>
 		    	<ul>
-		    		<li><a class="active" href='/'>Journal</a></li>
-		    		<li><a href='//blog.joshteague.com'>About</a></li>
+		    		{% if page.active == "journal" %}
+		    		<li><a class='active' href='/'>Journal</a></li>
+		    		{% else %}
+		    		<li><a href='/'>Journal</a></li>
+		    		{% endif %}
+
+		    		{% if page.active == "about" %}
+		    		<li><a class='active' href='/about.html'>About</a></li>
+		    		{% else %}
+		    		<li><a href='/about.html'>About</a></li>
+		    		{% endif %}
+
+		    		{% if page.active == "contact" %}
+		    		<li><a class='active' href='/contact.html'>Contact</a></li>
+		    		{% else %}
 		    		<li><a href='/contact.html'>Contact</a></li>
+		    		{% endif %}
 		    	</ul>
 		    </div>
 		    <div class='col-xs-12 col-sm-8 col-md-8'>
