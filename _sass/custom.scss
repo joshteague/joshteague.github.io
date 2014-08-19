@@ -202,27 +202,31 @@ a {
   b {
     font-weight:600;
   }
-}
 
-.bio a {
-  font-weight: inherit;
-  color: $red;
+  a {
+    font-weight: 500;
+    color: $red;
+  }
 }
 
 .g {
   color: #2C75F6;
+  font-weight: 500;
 }
 
 .o1 {
   color: #DC4935;
+  font-weight: 500;
 }
 
 .o2 {
   color: #FFC708;
+  font-weight: 500;
 }
 
 .l {
   color: #009857;
+  font-weight: 500;
 }
 
 .text-muted  {
@@ -248,7 +252,7 @@ h1 {
   font-family: $whitney;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
+  font-size: 30px;
   color: $red;
 }
 
@@ -257,7 +261,7 @@ p {
   font-family: $whitney;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7em;
 }
 
