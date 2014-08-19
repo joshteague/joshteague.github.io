@@ -2,7 +2,7 @@ $bodyBlue: #1DAFEC;
 $grayText: #96A2AC;
 $bodyTextColor: #4B6274;
 $hotRed: #FF4059;
-$red: #FF693E;
+$red: #FF4059;
 $grayDivider: 1px dotted #E4E8EB;
 $sentinel: 'Sentinel SSm A', 'Sentinel SSm B';
 $whitney: 'Whitney SSm A', 'Whitney SSm B';
@@ -21,6 +21,18 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-size: 14px;
   text-align: left;
+  color: #444;
+}
+
+a {
+  color:$red;
+}
+
+.face {
+  height:100px;
+  width:100px;
+  border-radius:100px;
+
 }
 
 .container {
@@ -37,16 +49,6 @@ body {
 
 .header {
   margin-top: 80px;
-}
-
-h1 {
-  font-size: 32px;
-  text-shadow: 0 1px 0 #fff;
-  color: #433838;
-  font-weight: 600;
-  margin-bottom: 50px;
-  margin-top:0px;
-  font-family: $whitney;
 }
 
 .btn {
@@ -192,10 +194,14 @@ h1 {
   margin-top:12px;
   margin-left:60px;
   line-height: 1.9em;
-  font-family:$sentinel;
+  font-family:$whitney;
   border-left: 2px solid #E4E8EB;
   padding-left:20px;
   color:$bodyTextColor;
+
+  b {
+    font-weight:600;
+  }
 }
 
 .bio a {
@@ -236,91 +242,11 @@ article {
   }
 }
 
-.fullstory {
-  background-color: #1DAFEC;
-
-  .logo {
-    background: url("/assets/fslogo.png") no-repeat center;
-    background-size: contain;
-    height: 210px;
-  }
-
-  a {
-    color: #fff;
-    font-weight: 600;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding-right: 14px;
-  }
-  a:after {
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    right: 0;
-    vertical-align: middle;
-    width: 6px;
-    height: 9px;
-    content: "";
-    background-image: url("/assets/chevron-x2.png");
-    background-size: 6px 9px;
-  }
-}
-
-.homebase {
-  background-color: #39464D;
-
-  .logo {
-    background: url("/assets/hblogo.png") no-repeat center;
-    background-size: contain;
-    height: 147px;
-  }
-}
-
-.google {
-  background-color: #fff;
-
-  .logo {
-    background: url("/assets/google.png") no-repeat center;
-    background-size: contain;
-    height: 226px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .google .logo {
-    background: url("/assets/google@2x.png") no-repeat center;
-    background-size: contain;
-    height: 226px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .homebase .logo {
-    background: url("/assets/hblogo@2x.png") no-repeat center;
-    background-size: contain;
-    height: 147px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .fullstory .logo {
-    background: url("/assets/fslogo@2x.png") no-repeat center;
-    background-size: contain;
-    height: 210px;
-  }
-}
-
-.logo {
-  margin-left:15px;
-  margin-right:15px;
-}
-
 h1 {
   margin-bottom:0px;
   display: inline;
   font-family: $whitney;
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
   font-size: 28px;
   color: $red;
@@ -328,12 +254,11 @@ h1 {
 
 p {
   margin-top: 30px;
-  font-family: $sentinel;
+  font-family: $whitney;
   font-weight: 400;
   font-style: normal;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.7em;
-  color: rgba(0,0,0,0.8);
 }
 
 .meta {
@@ -362,7 +287,7 @@ blockquote {
     font-weight:500;
     font-style: italic;
     line-height: 1.8em;
-    font-family: $whitney;
+    font-family: $sentinel;
   }
 }
 img {
