@@ -309,14 +309,13 @@ img {
   p {
     font-size:13px;
     font-family: $whitney;
-    font-style: italic;
-    color:#949AA0;
+    color:$bodyTextColor;
   }
   ul {
     border-top:2px solid #E4E8EB;
     padding:16px 0px;
     margin-top:10px;
-    color:#949AA0;
+    color:$bodyTextColor;
   }
   li {
     font-size:13px;
