@@ -31,8 +31,7 @@ a {
 .face {
   height:100px;
   width:100px;
-  border-radius:100px;
-
+  border-radius:100px
 }
 
 .container {
@@ -172,15 +171,13 @@ a {
 }
 
 .site-title {
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
-  font-weight: 600;
-  font-style: normal;
-  color:#3E5261;
-  text-decoration: none;
-  font-size:13px;
 
   &:hover {
     text-decoration:none;
+  }
+
+  &:active {
+    padding-top:20px;
   }
 
   .whatido {
@@ -343,7 +340,7 @@ img {
     border:none;
     border-bottom:2px solid #E4E8EB;
     font-family: $sentinel;
-    padding:0px 0px 5px 0px; 
+    padding:0px 0px 7px 0px; 
     outline:none;
   }
   .msg {
