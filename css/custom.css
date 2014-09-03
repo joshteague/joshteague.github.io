@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 11, ../_sass/custom.scss */
 * {
   margin: 0;
@@ -173,22 +174,58 @@ a {
   max-width: 880px;
 }
 
-/* line 175, ../_sass/custom.scss */
+/* line 174, ../_sass/custom.scss */
+#post h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-weight: 200;
+  color: #96a2ac;
+}
+/* line 181, ../_sass/custom.scss */
+#post h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+/* line 187, ../_sass/custom.scss */
+#post ul {
+  margin: 0 0 30px 30px;
+}
+/* line 190, ../_sass/custom.scss */
+#post li {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.7em;
+  list-style: none;
+  text-indent: -1.6em;
+}
+/* line 198, ../_sass/custom.scss */
+#post li:before {
+  padding-right: 16px;
+  font-size: 20px;
+  content: '•';
+  color: #ff4059;
+}
+
+/* line 209, ../_sass/custom.scss */
 .site-title:hover {
   text-decoration: none;
 }
-/* line 179, ../_sass/custom.scss */
+/* line 213, ../_sass/custom.scss */
 .site-title:active {
   padding-top: 20px;
 }
-/* line 183, ../_sass/custom.scss */
+/* line 217, ../_sass/custom.scss */
 .site-title .whatido {
   font-style: italic;
   color: #96a2ac;
   font-weight: 500;
 }
 
-/* line 190, ../_sass/custom.scss */
+/* line 224, ../_sass/custom.scss */
 .bio {
   margin-top: 12px;
   margin-left: 60px;
@@ -198,41 +235,41 @@ a {
   padding-left: 20px;
   color: #4b6274;
 }
-/* line 199, ../_sass/custom.scss */
+/* line 233, ../_sass/custom.scss */
 .bio b {
   font-weight: 600;
 }
-/* line 203, ../_sass/custom.scss */
+/* line 237, ../_sass/custom.scss */
 .bio a {
   font-weight: 500;
   color: #ff4059;
 }
 
-/* line 209, ../_sass/custom.scss */
+/* line 243, ../_sass/custom.scss */
 .g {
   color: #2C75F6;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-/* line 214, ../_sass/custom.scss */
+/* line 248, ../_sass/custom.scss */
 .o1 {
   color: #DC4935;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-/* line 219, ../_sass/custom.scss */
+/* line 253, ../_sass/custom.scss */
 .o2 {
   color: #FFC708;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-/* line 224, ../_sass/custom.scss */
+/* line 258, ../_sass/custom.scss */
 .l {
   color: #009857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-/* line 229, ../_sass/custom.scss */
+/* line 263, ../_sass/custom.scss */
 .text-muted {
   font-size: 18px;
   font-weight: 300;
@@ -241,17 +278,17 @@ a {
   color: #96a2ac;
 }
 
-/* line 237, ../_sass/custom.scss */
+/* line 271, ../_sass/custom.scss */
 article {
   padding: 10% 0px;
 }
-/* line 240, ../_sass/custom.scss */
+/* line 274, ../_sass/custom.scss */
 article .desc {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding: 20px;
 }
 
-/* line 246, ../_sass/custom.scss */
+/* line 280, ../_sass/custom.scss */
 h1 {
   margin-bottom: 0px;
   display: inline;
@@ -262,9 +299,9 @@ h1 {
   color: #ff4059;
 }
 
-/* line 256, ../_sass/custom.scss */
+/* line 290, ../_sass/custom.scss */
 p {
-  margin-top: 30px;
+  margin: 0px 0px 30px 0px;
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-weight: 400;
   font-style: normal;
@@ -272,11 +309,11 @@ p {
   line-height: 1.7em;
 }
 
-/* line 265, ../_sass/custom.scss */
+/* line 299, ../_sass/custom.scss */
 .meta {
   color: #96a2ac;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0px;
   margin: 0px;
   font-family: "Whitney SSm A", "Whitney SSm B";
@@ -284,12 +321,12 @@ p {
   font-weight: 500;
 }
 
-/* line 275, ../_sass/custom.scss */
+/* line 309, ../_sass/custom.scss */
 article {
   padding: 0px;
 }
 
-/* line 278, ../_sass/custom.scss */
+/* line 312, ../_sass/custom.scss */
 blockquote {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -298,7 +335,7 @@ blockquote {
   padding-bottom: 0px;
   border-left: 2px solid #ff4059;
 }
-/* line 286, ../_sass/custom.scss */
+/* line 320, ../_sass/custom.scss */
 blockquote p {
   font-size: 20px;
   font-weight: 500;
@@ -307,49 +344,49 @@ blockquote p {
   font-family: "Sentinel SSm A", "Sentinel SSm B";
 }
 
-/* line 294, ../_sass/custom.scss */
+/* line 328, ../_sass/custom.scss */
 img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 306, ../_sass/custom.scss */
+/* line 340, ../_sass/custom.scss */
 #contact p {
   font-size: 13px;
   font-family: "Whitney SSm A", "Whitney SSm B";
   color: #4b6274;
 }
-/* line 311, ../_sass/custom.scss */
+/* line 345, ../_sass/custom.scss */
 #contact ul {
   border-top: 2px solid #E4E8EB;
   padding: 16px 0px;
   margin-top: 10px;
   color: #4b6274;
 }
-/* line 317, ../_sass/custom.scss */
+/* line 351, ../_sass/custom.scss */
 #contact li {
   font-size: 13px;
   list-style: none;
   padding: 3px 0px;
 }
-/* line 322, ../_sass/custom.scss */
+/* line 356, ../_sass/custom.scss */
 #contact li a {
   color: #ff4059;
 }
-/* line 326, ../_sass/custom.scss */
+/* line 360, ../_sass/custom.scss */
 #contact form {
   margin-left: 10px;
 }
-/* line 329, ../_sass/custom.scss */
+/* line 363, ../_sass/custom.scss */
 #contact input {
   display: block;
   padding: 7px 0px;
 }
-/* line 333, ../_sass/custom.scss */
+/* line 367, ../_sass/custom.scss */
 #contact input:focus {
   border-bottom: 2px solid #ff4059;
 }
-/* line 337, ../_sass/custom.scss */
+/* line 371, ../_sass/custom.scss */
 #contact .email {
   width: 100%;
   font-size: 24px;
@@ -359,7 +396,7 @@ img {
   padding: 0px 0px 7px 0px;
   outline: none;
 }
-/* line 346, ../_sass/custom.scss */
+/* line 380, ../_sass/custom.scss */
 #contact .msg {
   width: 100%;
   font-size: 24px;
@@ -370,11 +407,11 @@ img {
   height: 300px;
   font-family: "Sentinel SSm A", "Sentinel SSm B";
 }
-/* line 356, ../_sass/custom.scss */
+/* line 390, ../_sass/custom.scss */
 #contact .msg:focus {
   border-bottom: 2px solid #ff4059;
 }
-/* line 360, ../_sass/custom.scss */
+/* line 394, ../_sass/custom.scss */
 #contact .sendBtn {
   background-color: #ff4059;
   color: #fff;
@@ -387,57 +424,70 @@ img {
 }
 
 @media (max-width: 991px) {
-  /* line 376, ../_sass/custom.scss */
+  /* line 410, ../_sass/custom.scss */
   .site-header ul {
     text-align: left;
   }
-  /* line 379, ../_sass/custom.scss */
+  /* line 413, ../_sass/custom.scss */
   .site-header li {
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
-  /* line 384, ../_sass/custom.scss */
+  /* line 418, ../_sass/custom.scss */
   .header {
     margin-top: 60px;
   }
 
-  /* line 388, ../_sass/custom.scss */
+  /* line 422, ../_sass/custom.scss */
   .bio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 0px;
+    margin-top: 12px;
+  }
+
+  /* line 426, ../_sass/custom.scss */
+  .face {
+    height: auto;
+    width: auto;
+  }
+
+  /* line 430, ../_sass/custom.scss */
+  #post p img {
+    margin: 0px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 395, ../_sass/custom.scss */
+  /* line 437, ../_sass/custom.scss */
   .site-header .row {
     text-align: center;
   }
-  /* line 398, ../_sass/custom.scss */
+  /* line 440, ../_sass/custom.scss */
   .site-header ul {
     padding-top: 8px;
     text-align: center;
   }
-  /* line 402, ../_sass/custom.scss */
+  /* line 444, ../_sass/custom.scss */
   .site-header li {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* line 408, ../_sass/custom.scss */
+  /* line 450, ../_sass/custom.scss */
   .header {
     margin-top: 20px;
   }
 
-  /* line 412, ../_sass/custom.scss */
+  /* line 454, ../_sass/custom.scss */
   h1 {
     font-size: 24px;
     margin-top: 7px;
   }
 
-  /* line 417, ../_sass/custom.scss */
+  /* line 459, ../_sass/custom.scss */
   .bio {
-    font-size: 20px;
+    font-size: 13px;
     margin-top: 20px;
     margin-bottom: 30px;
+    text-align: left;
   }
 }
