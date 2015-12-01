@@ -3,17 +3,24 @@
 
   {% include head.html %}
 
-    <body>
+  {% if page.style %}
+   <style type="text/css">
+       {{ page.style }}
+   </style>
+  {% endif %}
+
+  <body>
 
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+      <div class="wrapper">
+        {{ content }}
       </div>
     </div>
 
-    <!--{% include footer.html %}-->
+    {% include footer.html %}
 
-    </body>
+  </body>
+
 </html>

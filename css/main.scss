@@ -1,0 +1,250 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$link-color:	   #4285f4;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb.eot");
+  /*  font-stretch: normal; */
+  font-weight: 400; font-style: normal; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Bold.eot"); font-weight: 700; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Black.eot"); font-weight: 800; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Medium.eot"); font-weight: 500; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Light.eot"); font-weight: 300; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-LightIta.eot"); font-weight: 300; font-style: italic; }
+/* then for WOFF-capable browsers */
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb.woff") format("woff");
+  /*  font-stretch: normal; */
+  font-weight: 400; font-style: normal; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Bold.woff") format("woff"); font-weight: 700; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Black.woff") format("woff"); font-weight: 800; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Medium.woff") format("woff"); font-weight: 500; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Light.woff") format("woff"); font-weight: 300; }
+@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-LightIta.woff") format("woff"); font-weight: 300; font-style: italic; }
+
+body {
+	font-family: 'DINWeb', sans-serif;
+	background: #fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrap {
+    padding: 10px;
+    min-height: -webkit-calc(100% - 259px);     /* Chrome */
+    min-height: -moz-calc(100% - 259px);     /* Firefox */
+    min-height: calc(100% - 259px);     /* native */
+}
+
+a, a:visited {
+	color:$link-color;
+}
+
+.wrapper {
+	margin-left: 72px;
+	margin-right:0px;
+}
+
+.site-header {
+	border:none;
+	margin-top:72px;
+
+	.site-title {
+		letter-spacing: 0.07em;
+	}
+}
+.site-title {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 500;
+	color: #222 !important;
+}
+
+.post .site-title {
+	font-weight: 100;
+}
+
+.page-content {
+    padding: 32px 0;
+}
+
+.status {
+	margin-bottom: 56px;
+	display: inline-block;
+	margin-right: 136px;
+
+	.meta {
+		text-transform: uppercase;
+		color: #96A2AC;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.14em;
+		margin-bottom: 4px;
+	}
+	.role {
+		color:#222;
+		font-size: 15px;
+	}
+
+	.g {
+	  color: #4285f4;
+	}
+
+	.o1 {
+	  color: #ea4335;
+	}
+
+	.o2 {
+	  color: #fbbc05;
+	}
+
+	.l {
+	  color: #34a853;
+	}
+
+}
+
+.post-link {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.post-meta {
+	text-transform: uppercase;
+  color: #96A2AC;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  margin-bottom: 4px;
+  min-width: 53px;
+  display: inline-block;
+}
+
+.post-list > li {
+    margin-bottom: 5px;
+}
+
+.post {
+	.post-title {
+		font-size:24px;
+		margin-bottom: 8px;
+		font-weight: 500;
+	}
+	.post-meta {
+		text-transform: uppercase;
+    color: #96A2AC;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    margin-bottom: 4px;
+	}
+
+	img {
+	}
+}
+
+.site-footer {
+	border:none;
+	padding-bottom: 0px;
+	position: relative;
+	clear:both;
+	padding:0px;
+}
+
+.footer-col {
+	margin-bottom: 0px;
+	color:#222;
+}
+
+.footer-col-1, .footer-col-2 {
+	width: auto;
+	text-transform: uppercase;
+	font-weight: 200;
+
+	.trigger {
+		margin-top: 48px;
+		margin-left: 20px;
+	}
+
+	.page-link {
+		display: block;
+		margin-bottom:9px;
+	}
+
+	.copyright {
+		margin-top: 24px;
+	}
+}
+
+.jt-brand {
+	background: url(/assets/jt-brand.png) no-repeat;
+	background-size: 119px 239px;
+	width: 119px;
+    height: 239px;
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
+	  background-image: url(/assets/jt-brand@2x.png)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
