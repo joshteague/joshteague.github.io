@@ -4,21 +4,11 @@ layout: default
 
 <div class="home">
 
-<div class="status">
-  <div class="meta">Currently</div>
-  <div class="role">Head of Design, <a href="//www.fullstory.com/">FullStory</a></div>
-</div>
-
-<div class="status">
-  <div class="meta">Previously</div>
-  <div class="role">UX Design, <a href="//www.google.com/"><span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="o1">e</span></a></div>
-</div>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-meta">{{ post.date | date: "%b %-Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

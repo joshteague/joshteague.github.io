@@ -10,22 +10,22 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
 
-$spacing-unit:     30px;
+$spacing-unit:     26px;
 
-$text-color:       #111;
+$text-color:       #222;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$link-color:	   #4285f4;
+$link-color:	   	 #4285f4;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    700px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        700px;
 
 
 
@@ -89,31 +89,70 @@ a, a:visited {
 }
 
 .wrapper {
-	margin-left: 72px;
-	margin-right:0px;
 }
 
 .site-header {
 	border:none;
-	margin-top:72px;
+	margin-top:36px;
+
+	.wrapper {
+		text-align: center;
+	}
 
 	.site-title {
-		letter-spacing: 0.07em;
+		letter-spacing: 0.01em;
+	}
+
+	ul {
+		margin-top: -3px;
+	}
+
+	li {
+		display: inline;
+
+		&:after {
+			content: '·';
+			font-size: 18px;
+			padding-left: 8px;
+			padding-right: 4px;
+		}
+
+		&:last-child {
+			&:after {
+				content:'';
+				padding:0;
+			}
+		}
+
+		a {
+			color:#222;
+
+			&:hover {
+				color:$link-color;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.meta {
+		text-transform: uppercase;
+		color: #222;
+		font-size: 13px;
+		font-weight: 300;
+		letter-spacing: 0.10em;
+		margin-bottom: 4px;
 	}
 }
 .site-title {
-	text-transform: uppercase;
-	font-size: 28px;
+	text-transform: capitalize;
+	font-size: 26px;
 	font-weight: 500;
 	color: #222 !important;
-}
-
-.post .site-title {
-	font-weight: 100;
+	float: none;
 }
 
 .page-content {
-    padding: 32px 0;
+    padding: 72px 0;
 }
 
 .status {
@@ -126,12 +165,8 @@ a, a:visited {
 		color: #96A2AC;
 		font-size: 13px;
 		font-weight: 400;
-		letter-spacing: 0.14em;
+		letter-spacing: 0.10em;
 		margin-bottom: 4px;
-	}
-	.role {
-		color:#222;
-		font-size: 16px;
 	}
 
 	.g {
@@ -154,22 +189,40 @@ a, a:visited {
 
 .post-link {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 17px;
 }
 
 .post-meta {
 	text-transform: uppercase;
   color: #96A2AC;
   font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  margin-bottom: 4px;
-  min-width: 56px;
+  font-weight: 300;
+  letter-spacing: 0.10em;
+  float: right;
+  text-align: right;
   display: inline-block;
 }
 
-.post-list > li {
-    margin-bottom: 5px;
+.post-list { 
+
+	> li {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 2.8em;
+  }
+
+  a {
+  	color: #222;
+
+  	&:hover {
+  		color: $link-color;
+  		text-decoration: none;
+  	}
+  }
+
+  .post .post-meta {
+  	float: right;
+  }
 }
 
 .post {
@@ -177,19 +230,29 @@ a, a:visited {
 		font-size:24px;
 		margin-bottom: 8px;
 		font-weight: 500;
+		text-align: center;
 	}
-	.post-meta {
+
+	.post-content .post-meta {
 		text-transform: uppercase;
     color: #96A2AC;
     font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 0.14em;
+    font-weight: 300;
+    letter-spacing: 0.10em;
     margin-bottom: 4px;
+    float:none;
 	}
 
 	img {
 		max-width: 960px;
 	}
+}
+
+article hr {
+	   width: 22px;
+    margin: 0 auto 56px;
+    border-style: none;
+    border: 1px solid #222;
 }
 
 .site-footer {
@@ -203,6 +266,10 @@ a, a:visited {
 .footer-col {
 	margin-bottom: 0px;
 	color:#222;
+}
+
+.footer-col-wrapper {
+	margin:0px;
 }
 
 .footer-col-1, .footer-col-2 {
@@ -228,8 +295,8 @@ a, a:visited {
 .jt-brand {
 	background: url(/assets/jt-brand.png) no-repeat;
 	background-size: 119px 239px;
-	width: 119px;
-    height: 239px;
+	background-position: center;
+  height: 239px;
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
 	  background-image: url(/assets/jt-brand@2x.png)
