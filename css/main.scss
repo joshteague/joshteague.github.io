@@ -5,10 +5,10 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   17px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
@@ -124,14 +124,14 @@ a, a:visited {
 	.meta {
 		text-transform: uppercase;
 		color: #96A2AC;
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: 400;
 		letter-spacing: 0.14em;
 		margin-bottom: 4px;
 	}
 	.role {
 		color:#222;
-		font-size: 15px;
+		font-size: 16px;
 	}
 
 	.g {
@@ -154,17 +154,17 @@ a, a:visited {
 
 .post-link {
 	display: inline-block;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .post-meta {
 	text-transform: uppercase;
   color: #96A2AC;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.14em;
   margin-bottom: 4px;
-  min-width: 53px;
+  min-width: 56px;
   display: inline-block;
 }
 
@@ -181,13 +181,14 @@ a, a:visited {
 	.post-meta {
 		text-transform: uppercase;
     color: #96A2AC;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.14em;
     margin-bottom: 4px;
 	}
 
 	img {
+		max-width: 960px;
 	}
 }
 
