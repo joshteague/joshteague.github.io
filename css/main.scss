@@ -99,10 +99,6 @@ a, a:visited {
 		text-align: center;
 	}
 
-	.site-title {
-		letter-spacing: 0.01em;
-	}
-
 	ul {
 		margin-top: -3px;
 	}
@@ -149,6 +145,7 @@ a, a:visited {
 	font-weight: 500;
 	color: #222 !important;
 	float: none;
+	letter-spacing: 0;
 }
 
 .page-content {
@@ -198,9 +195,7 @@ a, a:visited {
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.10em;
-  float: right;
   text-align: right;
-  display: inline-block;
 }
 
 .post-list { 
@@ -213,15 +208,21 @@ a, a:visited {
 
   a {
   	color: #222;
+  	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: baseline;
+    -moz-align-items: baseline;
+    -ms-align-items: baseline;
+  	align-items: baseline;
+  	justify-content: space-between;
 
   	&:hover {
   		color: $link-color;
   		text-decoration: none;
   	}
-  }
-
-  .post .post-meta {
-  	float: right;
   }
 }
 
@@ -231,16 +232,17 @@ a, a:visited {
 		margin-bottom: 8px;
 		font-weight: 500;
 		text-align: center;
+		letter-spacing: 0px;
 	}
 
 	.post-content .post-meta {
 		text-transform: uppercase;
+		text-align: left;
     color: #96A2AC;
     font-size: 13px;
     font-weight: 300;
     letter-spacing: 0.10em;
-    margin-bottom: 4px;
-    float:none;
+    margin-top: 20px;
 	}
 
 	img {
@@ -270,26 +272,6 @@ article hr {
 
 .footer-col-wrapper {
 	margin:0px;
-}
-
-.footer-col-1, .footer-col-2 {
-	width: auto;
-	text-transform: uppercase;
-	font-weight: 200;
-
-	.trigger {
-		margin-top: 48px;
-		margin-left: 20px;
-	}
-
-	.page-link {
-		display: block;
-		margin-bottom:9px;
-	}
-
-	.copyright {
-		margin-top: 24px;
-	}
 }
 
 .jt-brand {
