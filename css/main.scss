@@ -23,11 +23,13 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    700px;
-
 $on-palm:          600px;
 $on-laptop:        700px;
 
-
+$res_lg: 1200px;
+$res_md: 992px;
+$res_sm: 768px;
+$res_xs: 480px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -235,18 +237,40 @@ a, a:visited {
 		letter-spacing: 0px;
 	}
 
-	.post-content .post-meta {
-		text-transform: uppercase;
-		text-align: left;
-    color: #96A2AC;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 0.10em;
-    margin-top: 20px;
-	}
+	.post-content {
 
-	img {
-		max-width: 960px;
+		figure {	
+			text-align: center;
+			margin:20px 0 0 0;
+
+			@media (min-width: $res_md) {
+				margin-left: -90px;
+				margin-right: -90px;
+			}
+
+	    @media (min-width: $res_lg) {
+	    	margin-left: -265px;
+	    	margin-right: -265px;
+	    }
+
+	    img {
+	    	max-width: 100%;
+	    }
+
+	    figcaption {
+	    	margin:12px 0 20px 0;
+	    }
+		}
+
+		.post-meta {
+			text-transform: uppercase;
+			text-align: left;
+	    color: #96A2AC;
+	    font-size: 13px;
+	    font-weight: 300;
+	    letter-spacing: 0.10em;
+	    margin-top: 20px;
+	  }
 	}
 }
 
