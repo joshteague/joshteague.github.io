@@ -5,7 +5,7 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   17px;
+$base-font-size:   15px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
@@ -22,7 +22,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    700px;
+$content-width:    692px;
 $on-palm:          600px;
 $on-laptop:        700px;
 
@@ -51,26 +51,8 @@ $res_xs: 480px;
         "syntax-highlighting"
 ;
 
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb.eot");
-  /*  font-stretch: normal; */
-  font-weight: 400; font-style: normal; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Bold.eot"); font-weight: 700; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Black.eot"); font-weight: 800; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Medium.eot"); font-weight: 500; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Light.eot"); font-weight: 300; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-LightIta.eot"); font-weight: 300; font-style: italic; }
-/* then for WOFF-capable browsers */
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb.woff") format("woff");
-  /*  font-stretch: normal; */
-  font-weight: 400; font-style: normal; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Bold.woff") format("woff"); font-weight: 700; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Black.woff") format("woff"); font-weight: 800; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Medium.woff") format("woff"); font-weight: 500; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-Light.woff") format("woff"); font-weight: 300; }
-@font-face { font-family: DINWeb; src: url("/assets/fonts/DINWeb-LightIta.woff") format("woff"); font-weight: 300; font-style: italic; }
-
 body {
-	font-family: 'DINWeb', sans-serif;
+	font-family: 'Whitney SSm A', 'Whitney SSm B', Helvetica, Arial, Sans;
 	background: #fff;
 }
 
@@ -132,22 +114,41 @@ a, a:visited {
 		}
 	}
 
-	.meta {
-		text-transform: uppercase;
+	.bio {
 		color: #222;
-		font-size: 13px;
-		font-weight: 300;
-		letter-spacing: 0.10em;
+		font-size: 22px;
+		font-weight: 100;
 		margin-bottom: 4px;
 	}
 }
-.site-title {
-	text-transform: capitalize;
-	font-size: 26px;
-	font-weight: 500;
-	color: #222 !important;
-	float: none;
-	letter-spacing: 0;
+
+.g {
+  color: #4285f4;
+}
+
+.o1 {
+  color: #ea4335;
+}
+
+.o2 {
+  color: #fbbc05;
+}
+
+.l {
+  color: #34a853;
+}
+
+.header-pic {
+	background: url(/assets/profile-pic.png) no-repeat;
+	background-size: 96px 96px;
+	height:96px;
+	background-position: center;
+	margin-bottom:36px;
+	margin-top:	90px;
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
+	  background-image: url(/assets/profile-pic@2x.png)
+	}
 }
 
 .page-content {
@@ -167,36 +168,20 @@ a, a:visited {
 		letter-spacing: 0.10em;
 		margin-bottom: 4px;
 	}
-
-	.g {
-	  color: #4285f4;
-	}
-
-	.o1 {
-	  color: #ea4335;
-	}
-
-	.o2 {
-	  color: #fbbc05;
-	}
-
-	.l {
-	  color: #34a853;
-	}
-
 }
 
 .post-link {
 	display: inline-block;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 .post-meta {
-	text-transform: uppercase;
+	text-transform: lowercase;
+	font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
   color: #96A2AC;
   font-size: 13px;
   font-weight: 300;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.05em;
   text-align: right;
 }
 
@@ -204,8 +189,8 @@ a, a:visited {
 
 	> li {
     margin-bottom: 0;
-    border-bottom: 1px solid #f1f1f1;
-    line-height: 2.8em;
+    border-bottom: 1px solid #E4E8EB;
+    line-height: 3.5em;
   }
 
   a {
@@ -229,15 +214,42 @@ a, a:visited {
 }
 
 .post {
+	.bio {
+		display: none;
+	}
+
+	.page-content {
+	    padding: 0 0 72px 0;
+	}
+
 	.post-title {
-		font-size:24px;
+		font-size:22px;
 		margin-bottom: 8px;
 		font-weight: 500;
 		text-align: center;
 		letter-spacing: 0px;
+		margin-top: 6px;
 	}
 
 	.post-content {
+
+		p {
+			line-height: 1.9em;
+		}
+
+		strong {
+			font-weight: 600;
+		}
+
+		h4 {
+			font-size: 15px;
+	    font-weight: 600;
+	    margin-top: 32px;
+		}
+
+		img {
+    	margin:8px 0;
+		}
 
 		figure {	
 			text-align: center;
@@ -263,13 +275,14 @@ a, a:visited {
 		}
 
 		.post-meta {
-			text-transform: uppercase;
+			text-transform: lowercase;
+			font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
 			text-align: left;
 	    color: #96A2AC;
 	    font-size: 13px;
 	    font-weight: 300;
-	    letter-spacing: 0.10em;
-	    margin-top: 20px;
+	    letter-spacing: 0.05em;
+	    margin-top: 32px;
 	  }
 	}
 }
@@ -308,17 +321,3 @@ article hr {
 	  background-image: url(/assets/jt-brand@2x.png)
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

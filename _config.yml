@@ -18,7 +18,3 @@ twitter_username: joshteague
 
 # Build settings
 markdown: kramdown
-gems: [jekyll_figure]
-
-figures:
-  dir: /assets
