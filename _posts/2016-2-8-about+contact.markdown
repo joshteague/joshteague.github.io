@@ -10,6 +10,6 @@ I’m Josh Teague, an Atlanta-based product designer, husband, and father of thr
 
 Outside of work I enjoy dance parties with my three little girls, nights out with my wife, discussing the grace-centered gospel message, shoes, and photography.
 
-####Say hello :)
+#### Say hello :)
 
 I love to connect with local designers and creative people, so [email me](mailto: joshteague@gmail.com) if you'd like to get a coffee one morning. Of course, you can catch me [on Twitter](//www.twitter.com/joshteague), too.
