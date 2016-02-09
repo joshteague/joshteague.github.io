@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "About + Contact"
 date:   2016-1-1 00:03:23 -0500
 ---
