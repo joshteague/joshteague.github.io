@@ -2,7 +2,6 @@
 layout: post
 title:  "Now Dribbbling"
 date:   2016-2-8 15:03:23 -0500
-categories: dribbble
 ---
 Although I visit Dribbble often for visual design inspiration, I've never fully embraced it beyond consumption. Now, for both product marketing and recruiting efforts, we've devoted ourselves to post in a regular rhythm. In particular, I'm looking forward to posting content that speaks to our problem solving process.
 
