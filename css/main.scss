@@ -175,16 +175,6 @@ a, a:visited {
 	font-size: 15px;
 }
 
-.post-meta {
-	text-transform: lowercase;
-	font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
-  color: #96A2AC;
-  font-size: 13px;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  text-align: right;
-}
-
 .post-list { 
 
 	> li {
@@ -211,15 +201,39 @@ a, a:visited {
   		text-decoration: none;
   	}
   }
+
+  .post-meta {
+  	text-transform: lowercase;
+  	font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
+    color: #96A2AC;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
 }
 
-.post {
+.post, .page {
 	.bio {
 		display: none;
 	}
 
 	.page-content {
 	    padding: 0 0 72px 0;
+	}
+
+	.post-header {
+
+		.post-meta {
+			text-transform: lowercase;
+			font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
+			text-align: center;
+	    color: #96A2AC;
+	    font-size: 13px;
+	    font-weight: 300;
+	    letter-spacing: 0.05em;
+	    margin-top: 8px;
+  	}
 	}
 
 	.post-title {
@@ -273,23 +287,12 @@ a, a:visited {
 	    	margin:12px 0 20px 0;
 	    }
 		}
-
-		.post-meta {
-			text-transform: lowercase;
-			font-family: "Whitney SSm SC A","Whitney SSm SC B",Helvetica,Arial,sans-serif;
-			text-align: left;
-	    color: #96A2AC;
-	    font-size: 13px;
-	    font-weight: 300;
-	    letter-spacing: 0.05em;
-	    margin-top: 32px;
-	  }
 	}
 }
 
 article hr {
 	   width: 22px;
-    margin: 0 auto 56px;
+    margin: 56px auto;
     border-style: none;
     border: 1px solid #222;
 }
