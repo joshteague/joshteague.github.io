@@ -77,7 +77,6 @@ a, a:visited {
 
 .site-header {
 	border:none;
-	margin-top:36px;
 
 	.wrapper {
 		text-align: center;
@@ -139,16 +138,15 @@ a, a:visited {
 }
 
 .header-pic {
-	background: url(/assets/profile-pic.png) no-repeat;
+	background: url(/assets/josht.jpeg) no-repeat;
 	background-size: 96px 96px;
 	height:96px;
+	width: 96px;
+	display: inline-block;
 	background-position: center;
 	margin-bottom:36px;
 	margin-top:	90px;
-
-	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
-	  background-image: url(/assets/profile-pic@2x.png)
-	}
+	border-radius: 48px;
 }
 
 .page-content {
