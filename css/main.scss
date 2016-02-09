@@ -63,9 +63,9 @@ html, body {
 
 #wrap {
     padding: 10px;
-    min-height: -webkit-calc(100% - 259px);     /* Chrome */
-    min-height: -moz-calc(100% - 259px);     /* Firefox */
-    min-height: calc(100% - 259px);     /* native */
+    min-height: -webkit-calc(100% - 321px);     /* Chrome */
+    min-height: -moz-calc(100% - 321px);     /* Firefox */
+    min-height: calc(100% - 321px);     /* native */
 }
 
 a, a:visited {
@@ -301,24 +301,41 @@ article hr {
 	position: relative;
 	clear:both;
 	padding:0px;
-}
 
-.footer-col {
-	margin-bottom: 0px;
-	color:#222;
-}
+	.wrapper {
+		text-align: center;
 
-.footer-col-wrapper {
-	margin:0px;
-}
+		.twitter {
+			width:34px;
+			height:auto;
+			display: inline-block;
+			margin-bottom: 34px;
+		}
 
-.jt-brand {
-	background: url(/assets/jt-brand.png) no-repeat;
-	background-size: 119px 239px;
-	background-position: center;
-  height: 239px;
+		a svg:hover .twitter { 
+		  fill: #111;
+		}
+	}
+	.footer-col {
+		margin-bottom: 0px;
+		color:#222;
+	}
 
-	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
-	  background-image: url(/assets/jt-brand@2x.png)
+	.footer-col-wrapper {
+		margin:0px;
+
+		.jt-brand {
+			background: url(/assets/jt-brand.png) no-repeat;
+			background-size: 119px 239px;
+			background-position: center;
+		  height: 239px;
+
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 2dppx) {
+			  background-image: url(/assets/jt-brand@2x.png)
+			}
+		}
 	}
 }
+
+
+
