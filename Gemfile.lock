@@ -16,6 +16,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.3.0)
       listen (~> 3.0)
+    jekyll_figure (0.0.3)
     kramdown (1.9.0)
     liquid (3.0.6)
     listen (3.0.5)
@@ -34,6 +35,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll_figure
   kramdown
   rouge
 
