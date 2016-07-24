@@ -7,6 +7,10 @@ body > #container { height: auto; min-height: 100%;}
 .site-header {
     max-width: 500px;
     margin: 0 auto;
+
+    @media (max-width: 600px) {
+        max-width: 400px;
+    }
 }
 
 .site-title {
@@ -19,6 +23,12 @@ body > #container { height: auto; min-height: 100%;}
     text-align: center;
     letter-spacing: -15px;
     padding: 48px 0 26px 0;
+
+    @media (max-width: 600px) {
+        font-size: 84px;
+        line-height: 74px;
+        letter-spacing: -11px;
+    }
 /*    background-image:  -webkit-linear-gradient(left, rgba(202,233,91,1) 0%, rgba(30,165,156,1) 51%, rgba(255,97,150,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
@@ -29,6 +39,10 @@ body > #container { height: auto; min-height: 100%;}
     font-style: italic;
     font-weight: 200;
     font-size: 16px;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 .my-role {
@@ -36,6 +50,10 @@ body > #container { height: auto; min-height: 100%;}
     font-weight: 500;
     font-size: 26px;
     margin-top: 20px;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
 
     a, a:visited {
       color: $brand-color !important;
