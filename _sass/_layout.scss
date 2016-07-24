@@ -139,6 +139,10 @@ body > #container { height: auto; min-height: 100%;}
       font-weight: 200;
       padding: 20px 46px;
       transition: background-color 0.2s ease-in-out;
+
+      @media (max-width: 600px) {
+          font-size: 14px;
+      }
     
       &:hover {
         background-color: #000;
