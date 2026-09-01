@@ -15,3 +15,10 @@ twitter_username: joshteague
 
 # Build settings
 markdown: kramdown
+
+# Local tooling — never part of the published site.
+exclude:
+  - bin
+  - vendor
+  - Gemfile
+  - Gemfile.lock

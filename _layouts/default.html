@@ -3,7 +3,8 @@
 
   {% include head.html %}
 
-  <body>
+  {% capture body_class %}{% if page.hide_header %}no-site-header {% endif %}{% if page.hide_footer %}no-site-footer {% endif %}{% if page.center_page %}centered-page{% endif %}{% endcapture %}
+  <body{% if body_class != '' %} class="{{ body_class | strip }}"{% endif %}>
 
     {% include header.html %}
 

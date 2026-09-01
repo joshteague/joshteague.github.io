@@ -1,0 +1,135 @@
+/**
+ * CV
+ *
+ * Each entry is a single flowing line — role, em dash, organisation, year —
+ * rather than aligned columns. Lines are left-aligned inside a block that is
+ * itself centred, since `html, body` are centred site-wide.
+ */
+
+.cv-block {
+    // `inline-block` shrinks the block to its widest line, which the centred
+    // parent then centres; `text-align: left` keeps the lines ragged right
+    // rather than centred on each other.
+    display: inline-block;
+    text-align: left;
+    font-family: $inter-family;
+    // No bottom margin: nothing follows the block, and trailing margin is
+    // counted into the centred box, pushing the visible content off-centre by
+    // half its value.
+    margin-bottom: 0;
+}
+
+// The name, serving as the page title directly above the entries and sharing
+// their left edge.
+.cv-name {
+    font-size: 1.75em;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+
+    // A rule splitting the gap below the title, echoing the bar the homepage
+    // draws above `.my-role`. The margins are equal above and below so the bar
+    // sits centred in the gap -- change the one value to open or close it.
+    &:after {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 4px;
+        margin: 24px 0;
+        background-color: $text-color;
+    }
+}
+
+.cv {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin-bottom: 6px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// The year trailing each entry, set back so it reads as an aside. The offset
+// is deliberately small: with a `\00b7` separator rather than an em dash, a
+// wider gap here makes the year look detached from its entry.
+.cv-year {
+    margin-left: 0.2em;
+    color: $grey-color;
+    white-space: nowrap;
+
+    // Sized off Inter's digits rather than by eye: Inter's numerals cap at
+    // 11.8px, and 0.88em puts the mono at 10.3px, the same proportion that
+    // read level back when the surrounding face was Avenir Next. The year also
+    // stays at 400 while the rest of the line steps up to 500.
+    font-family: $mono-font-family;
+    font-size: 0.88em;
+    font-weight: 400;
+}
+
+@include media-query($on-palm) {
+    // Wrapped lines hang under their own first line instead of running back
+    // to the margin, so entries stay visually separate.
+    .cv li {
+        padding-left: 1em;
+        text-indent: -1em;
+        margin-bottom: 10px;
+    }
+}
+
+// "Google" in its own logo colours, reusing the per-letter classes and
+// variables the homepage byline already uses.
+.google {
+    .g  { color: $google-blue; }
+    .o1 { color: $google-red; }
+    .o2 { color: $google-yellow; }
+    .l  { color: $google-green; }
+}
+
+// Georgia Tech, set in the yellow from Google's second "o".
+.gatech {
+    color: $google-yellow;
+}
+
+// Fullstory, set in the green from Google's "l".
+.fullstory {
+    color: $google-green;
+}
+
+// With the site wordmark hidden, `.page-content`'s single $spacing-unit is the
+// only thing above the content, which leaves it pinned to the top of the
+// window. Give the page a little room to breathe.
+.no-site-header .page-content {
+    padding-top: $spacing-unit * 3;
+}
+
+// `.page-content` reserves 284px at the bottom for the sticky footer, which
+// leaves a large void once the footer is gone.
+.no-site-footer .page-content {
+    padding-bottom: $spacing-unit * 3;
+}
+
+// Centre the content in the viewport, both axes. Declared after the
+// `.no-site-*` padding rules above, which it overrides at equal specificity.
+.centered-page {
+    #container {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .page-content {
+        // `margin: auto` centres a flex item on both axes and, unlike
+        // `align-items: center`, keeps the top reachable if the content ever
+        // outgrows a short viewport. The padding stops it touching the edges.
+        margin: auto;
+        width: 100%;
+        padding: $spacing-unit 0;
+    }
+}
