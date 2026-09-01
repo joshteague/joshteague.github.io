@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Preview the site locally at http://localhost:4000.
+# Jekyll watches the source and rebuilds on save — refresh the browser to see it.
+# (--livereload is deliberately not used: with the gem set this Ruby can install,
+#  the livereload.js endpoint never responds and the page hangs on a blocking script.)
+# LANG is forced to UTF-8: macOS system Ruby otherwise reads files as US-ASCII
+# and chokes on the non-ASCII characters in _config.yml.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+exec bundle exec jekyll serve "$@"
