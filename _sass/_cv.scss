@@ -116,20 +116,49 @@
     padding-bottom: $spacing-unit * 3;
 }
 
-// Centre the content in the viewport, both axes. Declared after the
-// `.no-site-*` padding rules above, which it overrides at equal specificity.
+// Position the content in the viewport. Declared after the `.no-site-*`
+// padding rules above, which it overrides at equal specificity.
+//
+// The vertical placement is a ratio of the free space above the content to the
+// free space below it: 1 and 2 put it a third of the way down. Equal values
+// would centre it. Horizontal centring comes from the site-wide `text-align`
+// and the shrink-wrapped `.cv-block`.
+$page-space-above: 1;
+$page-space-below: 2;
+
 .centered-page {
     #container {
         display: flex;
+        flex-direction: column;
         min-height: 100vh;
     }
 
+    // Weighted spacers rather than `justify-content`, which cannot split space
+    // unevenly. Both have a zero basis, so on a viewport too short for the
+    // content they collapse and it overflows downward, leaving the top
+    // reachable instead of clipped.
+    // `min-height` keeps the content off the window edges on a short
+    // viewport. It lives here rather than as padding on `.page-content`,
+    // which would sit inside the measured box and skew the ratio.
+    #container:before,
+    #container:after {
+        content: '';
+        flex-basis: 0;
+        min-height: $spacing-unit;
+    }
+
+    #container:before {
+        flex-grow: $page-space-above;
+    }
+
+    #container:after {
+        flex-grow: $page-space-below;
+    }
+
     .page-content {
-        // `margin: auto` centres a flex item on both axes and, unlike
-        // `align-items: center`, keeps the top reachable if the content ever
-        // outgrows a short viewport. The padding stops it touching the edges.
-        margin: auto;
+        flex-grow: 0;
+        margin: 0;
         width: 100%;
-        padding: $spacing-unit 0;
+        padding: 0;
     }
 }
