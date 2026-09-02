@@ -145,6 +145,27 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
 }
 
 
+// The second line sits dim so the orgs carry it: the two coloured names are
+// the only bright thing in it, which is the hierarchy the headline wants.
+.statement-sub {
+    margin: 27px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $home-text-dim;
+
+    @media (min-width: 860px) { font-size: 25px; }
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease-in-out;
+
+        &:hover { border-bottom-color: currentColor; }
+    }
+}
+
+
 /**
  * Work / Education strips
  */
