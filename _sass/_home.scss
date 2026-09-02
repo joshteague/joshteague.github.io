@@ -1,0 +1,241 @@
+/**
+ * Home
+ *
+ * A dark, left-aligned single column: kicker, wordmark, locale, a three-part
+ * rule, the CV, then contact. Everything is scoped under `.home-page` so the
+ * light treatment on the rest of the site is untouched.
+ *
+ * The palette is three colours; the two bright ones only hold up against a
+ * dark ground, which is why the page inverts rather than sitting on white.
+ */
+
+$seed-mint:   #22ffaa;
+$seed-cyan:   #22dddd;
+$seed-violet: #660088;
+
+// Canvas and ink, pulled toward the violet so the darks read warm rather than
+// a neutral grey-black.
+$home-bg:         #120a18;
+$home-text:       #f4eef8;
+$home-text-dim:   #9d8fab;
+// The violet lifted far enough to be legible as a foreground on the canvas.
+$home-violet-key: #c07be8;
+
+// Spacing steps: 6 9 18 27 36 54 72 96.
+
+.home-page {
+    background-color: $home-bg;
+    // A single soft bloom off the top-left corner, so the ground has some
+    // depth without competing with the type.
+    background-image: radial-gradient(58% 52% at 10% 6%, rgba(102, 0, 136, 0.55) 0%, rgba(102, 0, 136, 0) 68%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $home-text;
+
+    ::selection {
+        background-color: rgba(34, 255, 170, 0.28);
+    }
+
+    a:focus-visible {
+        outline: 2px solid $seed-mint;
+        outline-offset: 3px;
+    }
+}
+
+.home-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 36px;
+
+    // Weighted spacers put the column a third of the way down. Zero basis with
+    // a floor, so a short viewport scrolls rather than clipping the wordmark.
+    &:before,
+    &:after {
+        content: '';
+        flex-basis: 0;
+        min-height: 36px;
+    }
+
+    &:before { flex-grow: 1; }
+    &:after  { flex-grow: 2; }
+}
+
+.home-inner {
+    flex-grow: 0;
+    width: 100%;
+    max-width: 864px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/**
+ * Wordmark block
+ */
+
+.kicker {
+    margin: 0 0 18px;
+    font-family: $inter-family;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $seed-mint;
+}
+
+.wordmark {
+    margin: 0;
+    font-family: $title-font-family;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $home-text;
+
+    @media (min-width: 520px) { font-size: 62px; }
+    @media (min-width: 860px) { font-size: 96px; }
+}
+
+.locale {
+    margin: 18px 0 0;
+    font-family: $inter-family;
+    font-size: 16px;
+    font-weight: 400;
+    color: $home-text-dim;
+}
+
+
+/**
+ * Three-part rule
+ *
+ * Three segments of 28px with 6px between them: 96px in total, and one segment
+ * for each colour in the palette.
+ */
+
+.rule {
+    display: flex;
+    width: 96px;
+    margin: 36px 0;
+
+    span {
+        width: 28px;
+        height: 3px;
+        margin-right: 6px;
+    }
+
+    span:nth-child(1) { background-color: $seed-mint; }
+    span:nth-child(2) { background-color: $seed-cyan; }
+    span:nth-child(3) { background-color: $home-violet-key; margin-right: 0; }
+}
+
+
+/**
+ * CV
+ *
+ * One flowing line per entry rather than aligned columns.
+ */
+
+.cv {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: $inter-family;
+
+    li {
+        margin-bottom: 9px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: $home-text;
+    }
+
+    li:last-child { margin-bottom: 0; }
+
+    .sep { color: $home-text-dim; }
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease-in-out;
+
+        &:hover { border-bottom-color: currentColor; }
+    }
+
+    .org-fullstory { color: $seed-mint; }
+    .org-gatech    { color: $seed-cyan; }
+}
+
+// Sized off Inter's numerals: 0.88em puts the monospace digits level with the
+// surrounding text rather than towering over it.
+.cv-year {
+    margin-left: 0.2em;
+    font-family: $mono-font-family;
+    font-size: 0.88em;
+    font-weight: 400;
+    color: $home-text-dim;
+    white-space: nowrap;
+}
+
+// Google in its own logo colours -- the one place brand colour outranks the
+// page palette, since it is a logotype rather than a decorative choice.
+.google {
+    .g  { color: #4285f4; }
+    .o1 { color: #ea4335; }
+    .o2 { color: #fbbc05; }
+    .l  { color: #34a853; }
+}
+
+
+/**
+ * Contact
+ *
+ * Set in the monospace face, which carries anything on the page that is data
+ * rather than prose -- the years above, the address here.
+ */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 54px;
+    font-family: $mono-font-family;
+    font-size: 13px;
+
+    a {
+        margin-right: 27px;
+        color: $home-text-dim;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+        &:hover {
+            color: $seed-mint;
+            border-bottom-color: $seed-mint;
+        }
+    }
+
+    a:first-child { color: $home-text; }
+
+    a:last-child { margin-right: 0; }
+}
+
+
+@include media-query($on-palm) {
+    // Entries wrap on a phone. A hanging indent keeps continuation lines --
+    // usually the year -- tucked under their own entry rather than running
+    // back to the margin and reading as a separate item.
+    .cv li {
+        padding-left: 1em;
+        text-indent: -1em;
+        margin-bottom: 18px;
+    }
+
+    .contact {
+        margin-top: 36px;
+    }
+
+    .contact a {
+        margin-right: 18px;
+    }
+}
