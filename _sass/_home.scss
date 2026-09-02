@@ -16,6 +16,7 @@ $seed-violet: #660088;
 
 $home-bg:       #0b0c0f;
 $home-text:     #f5f6f8;
+$home-text-mid: #c9ced6;
 $home-text-dim: #8f949e;
 
 // Cards sit on tinted white rather than a lighter grey, so one background
@@ -145,16 +146,29 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
 }
 
 
-// The second line sits dim so the orgs carry it: the two coloured names are
-// the only bright thing in it, which is the hierarchy the headline wants.
+// Second beat: a claim in its own right, not metadata, so it sits at a mid
+// tone rather than the dim one -- clearly under the headline, clearly above
+// the placement line below it.
 .statement-sub {
-    margin: 27px 0 0;
+    margin: 18px 0 0;
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.4;
+    color: $home-text-mid;
+
+    @media (min-width: 860px) { font-size: 25px; }
+}
+
+// Placement: tenure and employers. Dim, so the coloured organisation names
+// are the only bright thing in the line.
+.statement-meta {
+    margin: 18px 0 0;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     color: $home-text-dim;
 
-    @media (min-width: 860px) { font-size: 25px; }
+    @media (min-width: 860px) { font-size: 18px; }
 
     a {
         text-decoration: none;
