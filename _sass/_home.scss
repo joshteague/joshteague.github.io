@@ -1,50 +1,42 @@
 /**
- * Home
+ * Home -- "precision" variant
  *
- * A dark, centred page: a slim top bar, a statement hero, then the CV grouped
- * into Work and Education as cards rather than a flat list. Everything is
- * scoped under `.home-page`, so the light treatment on the rest of the site is
- * untouched.
+ * A toolmaker of software makes instruments, not furniture, so this reads as
+ * a spec sheet rather than a workshop: flat ground, hairline rules, monospace
+ * for everything that is a measurement or a label, and a single accent used
+ * only on marks. No card fills, no bloom, no second accent.
  *
- * The palette is three colours. The two bright ones only hold up against a
- * dark ground, which is why the page inverts rather than sitting on white.
+ * Everything is scoped under `.home-page`, so the light treatment on the rest
+ * of the site is untouched.
  */
 
-$seed-mint:   #22ffaa;
-$seed-cyan:   #22dddd;
-$seed-violet: #660088;
+// One accent, from the seed palette, spent sparingly.
+$accent: #22dddd;
 
 $home-bg:       #0b0c0f;
-$home-text:     #f5f6f8;
-$home-text-dim: #8f949e;
+// Warm white rather than blue-white: the one concession to craft over clinic.
+$home-text:     #f2f0ec;
+$home-text-dim: #8b8b86;
+$rule:          rgba(242, 240, 236, 0.13);
+$rule-strong:   rgba(242, 240, 236, 0.26);
 
-// Cards sit on tinted white rather than a lighter grey, so one background
-// value keeps working if the canvas is ever retuned.
-$card-bg:       rgba(255, 255, 255, 0.035);
-$card-bg-hover: rgba(255, 255, 255, 0.06);
-$card-border:   rgba(255, 255, 255, 0.09);
-$card-border-hover: rgba(255, 255, 255, 0.18);
-
-// Spacing steps: 6 9 18 27 36 54 72 96. Radii: 9 18.
+// Spacing steps: 6 9 18 27 36 54 72 96.
 
 .home-page {
+    // Flat. The gradient bloom was the most contemporary-UI element on the
+    // page and the least earned by the work.
     background-color: $home-bg;
-    // One soft bloom, off-centre behind the hero.
-    background-image: radial-gradient(46% 38% at 50% 0%, rgba(102, 0, 136, 0.42) 0%, rgba(102, 0, 136, 0) 70%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: $home-text;
     font-family: $inter-family;
     text-align: left;
 
     ::selection {
-        background-color: rgba(34, 221, 221, 0.3);
+        background-color: rgba(34, 221, 221, 0.26);
     }
 
     a:focus-visible {
-        outline: 2px solid $seed-cyan;
+        outline: 1px solid $accent;
         outline-offset: 3px;
-        border-radius: 2px;
     }
 }
 
@@ -60,23 +52,21 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     max-width: 1008px;
     margin: 0 auto;
     padding: 27px 36px;
+    font-family: $mono-font-family;
     font-size: 13px;
 }
 
 .topbar-mark {
-    font-family: $display-font-family;
-    font-weight: 600;
-    letter-spacing: -0.01em;
     color: $home-text;
+    letter-spacing: 0.02em;
 }
 
 .topbar-link {
-    font-family: $mono-font-family;
     color: $home-text-dim;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 
-    &:hover { color: $seed-cyan; }
+    &:hover { color: $accent; }
 }
 
 
@@ -91,8 +81,9 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     text-align: center;
 }
 
-// Three segments of 28px with 6px between them: 96px in total, one for each
-// colour in the palette.
+// Three segments of 28px with 6px between them: 96px in total. Graded from
+// the accent down through the rules, so it reads as a scale rather than
+// three decorative colours.
 .mark {
     display: flex;
     width: 96px;
@@ -102,24 +93,23 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
         width: 28px;
         height: 3px;
         margin-right: 6px;
-        border-radius: 2px;
     }
 
-    span:nth-child(1) { background-color: $seed-mint; }
-    span:nth-child(2) { background-color: $seed-cyan; }
-    span:nth-child(3) { background-color: #c07be8; margin-right: 0; }
+    span:nth-child(1) { background-color: $accent; }
+    span:nth-child(2) { background-color: $rule-strong; }
+    span:nth-child(3) { background-color: $rule; margin-right: 0; }
 }
 
+// A stamped plate rather than a pill: square corners, hairline, no fill.
 .chip {
     display: inline-block;
     margin: 0 0 27px;
-    padding: 6px 18px;
-    border: 1px solid $card-border;
-    border-radius: 999px;
-    background-color: $card-bg;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    border: 1px solid $rule;
+    border-radius: 2px;
+    font-family: $mono-font-family;
+    font-size: 12px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $home-text-dim;
 }
@@ -134,20 +124,8 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     color: $home-text;
 
     @media (min-width: 860px) { font-size: 62px; }
-
-    a {
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        transition: border-color 0.2s ease-in-out;
-
-        &:hover { border-bottom-color: currentColor; }
-    }
 }
 
-
-// One supporting line under the headline, not two: three type treatments
-// stacked read as a pile rather than a hierarchy. Dim, so the coloured
-// organisation names are the only bright thing in it.
 .statement-sub {
     margin: 27px 0 0;
     font-size: 18px;
@@ -157,18 +135,24 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
 
     @media (min-width: 860px) { font-size: 22px; }
 
+    // Organisations sit in the text colour, not an accent: with one accent
+    // reserved for marks, weight and tone carry the emphasis instead.
+    .org {
+        color: $home-text;
+    }
+
     a {
         text-decoration: none;
-        border-bottom: 1px solid transparent;
+        border-bottom: 1px solid $rule;
         transition: border-color 0.2s ease-in-out;
 
-        &:hover { border-bottom-color: currentColor; }
+        &:hover { border-bottom-color: $accent; }
     }
 }
 
 
 /**
- * Work / Education strips
+ * Work / Education -- ruled rows
  */
 
 .strip {
@@ -177,93 +161,79 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     padding: 0 36px 54px;
 }
 
+// The label's rule runs out to the measure, the way a spec sheet divides
+// itself.
 .label {
     display: flex;
     align-items: center;
-    margin: 0 0 18px;
-    font-size: 13px;
-    font-weight: 600;
+    margin: 0 0 6px;
+    font-family: $mono-font-family;
+    font-size: 12px;
+    font-weight: 400;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: $home-text-dim;
+    color: $accent;
+
+    &:after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        margin-left: 18px;
+        background-color: $rule;
+    }
 }
 
-.dot {
-    width: 6px;
-    height: 6px;
-    margin-right: 9px;
-    border-radius: 50%;
+.rows {
+    border-top: 1px solid $rule;
 }
 
-.dot-mint { background-color: $seed-mint; }
-.dot-cyan { background-color: $seed-cyan; }
-
-.grid {
+.row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 18px;
+    grid-gap: 2px;
+    padding: 18px 0;
+    border-bottom: 1px solid $rule;
 
+    // Three columns on anything wide enough: name, role, then the date flush
+    // right so the years align into a column of their own.
     @media (min-width: 720px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 220px 1fr auto;
+        grid-gap: 27px;
+        align-items: baseline;
     }
 }
 
-.card {
-    padding: 27px;
-    border: 1px solid $card-border;
-    border-radius: 18px;
-    background-color: $card-bg;
-    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-
-    &:hover {
-        background-color: $card-bg-hover;
-        border-color: $card-border-hover;
-        transform: translateY(-3px);
-    }
-}
-
-// Honour a reduced-motion preference: keep the colour shift, drop the lift.
-@media (prefers-reduced-motion: reduce) {
-    .card {
-        transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-
-        &:hover { transform: none; }
-    }
-}
-
-.card-org {
-    margin: 0 0 9px;
+.row-org {
+    margin: 0;
     font-family: $display-font-family;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
-    letter-spacing: -0.02em;
-}
-
-.card-role {
-    margin: 0 0 18px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.4;
+    letter-spacing: -0.01em;
     color: $home-text;
 }
 
-.card-when {
+.row-role {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $home-text-dim;
+}
+
+.row-when {
     margin: 0;
     font-family: $mono-font-family;
     font-size: 13px;
     color: $home-text-dim;
+
+    @media (min-width: 720px) {
+        text-align: right;
+    }
 }
 
-
-/**
- * Organisation colours
- */
-
-.org-fullstory { color: $seed-mint; }
-.org-gatech    { color: $seed-cyan; }
-
 // Google in its own logo colours -- the one place brand colour outranks the
-// page palette, since it is a logotype rather than a decorative choice.
+// page palette, since it is a logotype rather than a decorative choice, and
+// on a page this restrained it becomes the single moment of colour.
 .google {
     .g  { color: #4285f4; }
     .o1 { color: #ea4335; }
@@ -282,7 +252,7 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     max-width: 1008px;
     margin: 18px auto 0;
     padding: 27px 36px 54px;
-    border-top: 1px solid $card-border;
+    border-top: 1px solid $rule;
     font-family: $mono-font-family;
     font-size: 13px;
 
@@ -292,7 +262,7 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
         text-decoration: none;
         transition: color 0.2s ease-in-out;
 
-        &:hover { color: $seed-cyan; }
+        &:hover { color: $accent; }
     }
 
     a:last-child { margin-right: 0; }
@@ -305,7 +275,6 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     }
 
     .topbar-link {
-        // The address is too wide to sit beside the name on a phone.
         display: none;
     }
 
@@ -313,12 +282,10 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
         padding: 36px 27px 54px;
     }
 
-    // Tightened so the label holds one line at 375px; wrapped, the pill reads
-    // as a stray box rather than a label.
     .chip {
-        padding: 6px 14px;
-        font-size: 11px;
-        letter-spacing: 0.04em;
+        padding: 6px 12px;
+        font-size: 10px;
+        letter-spacing: 0.06em;
     }
 
     .strip {
@@ -326,6 +293,6 @@ $card-border-hover: rgba(255, 255, 255, 0.18);
     }
 
     .foot {
-        padding: 18px 27px 36px;
+        padding: 27px 27px 36px;
     }
 }
